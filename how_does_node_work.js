@@ -1,5 +1,4 @@
 const os = require('os')
-console.log(os.cpus())
 /*
 ==> How does Node.js work?
 -> Whenever we make requests to a server first that request goes into the event queue which is the part of Node.js
@@ -40,3 +39,29 @@ console.log(os.cpus())
                 -> we can increase size of the  threads in node.js with process.env.UV_THREADPOOL_SIZE = any number
 
 */ 
+
+// Write the code of execution of above things
+const fs = require('fs')
+console.log("top console")
+setImmediate(()=>{
+   console.log('Set immediate is called')
+})
+setTimeout(()=>{
+   console.log("Set time")
+},0)
+
+
+fs.writeFile('text.txt',"Hello World this is Ravi from planet Earth.",(err)=>{
+   console.log("File is created")
+   setTimeout(()=>{
+      console.log("Settimeout 2 is called")
+   },0)
+   setTimeout(()=>{
+      console.log("Settimeout 3rd is called")
+   },5* 1000)
+   setImmediate(()=>{
+      console.log("Set immediate 2 is called")
+   })
+})
+
+console.log("Last line of the code")

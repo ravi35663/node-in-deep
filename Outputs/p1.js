@@ -8,7 +8,9 @@ setImmediate(()=>{
     console.log("set immediate")
     // it always run just before the setTimeout because it is executed in second execution of event-loop
 })
-
+process.nextTick(()=>{
+    console.log("nextTick is called in")
+})
 console.log("Last line")
 
 /*
