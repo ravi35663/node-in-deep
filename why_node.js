@@ -26,3 +26,69 @@
 -> IoT Devices you can build with Node.js
 				... etc
 */
+
+/*
+    Node.js applications are best for I/O intensive tasks:
+  
+    => File Reading/Writing:
+        -> reading or writing to a large or small file
+
+    => Database Queries:
+        -> Executing complex database queries that involve reading or writing a large amount of 
+           data.
+
+    => Network Requests:
+        -> Making numerous HTTP requests to external APIs or services.
+
+    => Data Serialization/Deserialization:
+        -> Converting data between different formats, such as JSON, XML, or binary.
+    
+    => Logging:
+        -> Writing logs to files or external logging services.
+
+    => Data Import/Export:
+        -> Importing or exporting data from one system to another.
+    
+    => Data Backup/Restore:
+    -> Performing backup and restore operations on a database.
+
+    => Image/Video/audio Processing:
+    -> Reading or writing image and video files, especially high-resolution or large files.
+
+    => Compression/Decompression:
+    -> Compressing or decompressing files or data.
+
+    => File System Operations:
+    -> Performing various file system operations like copying, moving, or deleting files.
+
+    => Streaming Data:
+    -> Handling real-time data streaming from external sources.
+
+    => Database Indexing:
+    -> Creating or updating database indexes, especially for large datasets.
+
+    => Search Indexing:
+    -> Building or updating search indexes for search engines.
+
+    => Parsing Large Documents:
+    -> Parsing large documents, such as XML or JSON files.
+
+    => Remote File Synchronization:
+        -> Synchronizing files between local and remote servers.
+
+    => Content Delivery:
+    Serving static files or content delivery over a network.
+
+    => Data Replication:
+    ->Replicating data between distributed systems.
+
+    => Cloud Storage Operations:
+    -> Interacting with cloud storage services to read or write data.
+
+    => Database Transactions:
+    -> Executing transactions that involve multiple database operations.
+
+    => Continuous Integration/Deployment:
+    -> Fetching, building, and deploying code in continuous integration or deployment pipelines.
+  
+*/
