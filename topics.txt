@@ -1,5 +1,3 @@
-Explain Node.js web application architecture.
-Difference between Javascript and Node.js
 How does Node.js handle concurrency?
 Explain callback, promises, and async-await in Node.js
 Explain callback hell in Node.js and how to avoid it?
