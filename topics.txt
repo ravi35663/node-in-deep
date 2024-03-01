@@ -4,7 +4,6 @@ What are package.json and its significance?
 What are streams in Node.js?
 What is REPL on Node.js?
 Difference between fork and spawn methods?
-What is Buffer, Piping & Stream Chaining in Node.js
 What are test pyramids in Node.js
 Explain middlewares in Node.js
 Different types of HTTP requests, codes and it’s the significance
