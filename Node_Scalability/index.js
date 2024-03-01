@@ -24,7 +24,7 @@ const http = require('http')
 if(cluster.isMaster){
     const workers = os.cpus().length;
     for(let i=0;i<workers;i++){
-        cluster.fork()//it creates child processes AKS worker processes 
+        cluster.fork()//it creates child processes AKA worker processes 
     }
     /*
         The primary purpose of using cluster.fork() is to enable a Node.js application to take 

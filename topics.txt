@@ -1,7 +1,3 @@
-How does Node.js handle concurrency?
-Explain callback, promises, and async-await in Node.js
-Explain callback hell in Node.js and how to avoid it?
-What are modules in Node.js?
 Explain the event loop and event-driven programming.
 Why Node is preferred over Java and PHP?
 What are the frameworks for Node.js?
