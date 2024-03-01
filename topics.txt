@@ -1,7 +1,3 @@
-Explain the event loop and event-driven programming.
-Why Node is preferred over Java and PHP?
-What are the frameworks for Node.js?
-Explain EventEmitter in Node.js
 Explain Async and Sync functions/methods/API.
 List down the tasks which should be done asynchronously using the event loop?
 What are package.json and its significance?
