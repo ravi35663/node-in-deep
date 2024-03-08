@@ -1,7 +1,6 @@
 ===> https://javascript.plainenglish.io/streams-piping-and-their-error-handling-in-nodejs-c3fd818530b6
 -> completed above first
 
-Explain Async and Sync functions/methods/API.
 List down the tasks which should be done asynchronously using the event loop?
 What are package.json and its significance?
 What are streams in Node.js?
