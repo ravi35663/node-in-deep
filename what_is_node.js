@@ -17,9 +17,9 @@
 -> I/O takes time and hence blocks other functions. That is the issue node.js is solving with a
    non-blocking I/O feature.
 -> Javascript is single threaded (Not really single threaded but it has a single threaded event-loop)
--> V8 is an open-source runtime environment which is written is C++.
+-> V8 is an open-source runtime environment which is written in C++.
 -> Javascript --> V8(C++) --> Machine code
--> There are many javascript runtimes like chrome V8, SpiderMonkey by Mozila, Chakra by Microsoft and
+-> There are many javascript runtime like chrome V8, SpiderMonkey by Mozila, Chakra by Microsoft and
    javascript core by apple etc.
 -> event-driven meaning in node.js is server always ready for actions/events to listen. I.e when any
    button is clicked an action with that button will happen at server side in terms of API or

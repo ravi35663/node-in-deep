@@ -29,7 +29,7 @@ const os = require('os')
                 -> Event callbacks register
                 -> start EventLoop () => Look for 
                     -> 1.Expired timer callbacks
-                    -> 2.IO polling (it is run isolate)
+                    -> 2.IO pooling (it is run isolate)
                     -> 3.setImmediate CB
                     -> 4.close callbacks
                     * if any task is pending then event loop repeat execution otherwise it exists the program

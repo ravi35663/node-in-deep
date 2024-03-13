@@ -50,7 +50,7 @@ eventEmitter.emit("event1")
     eventEmitter2.emit('myEvent');
 */
 
-//Maintaining a Single Event-Emitter Instance Application wide
+//Maintaining a Single Event-Emitter Instance Application wise
 /*
     -> A node application is generally 100s of files. This gets challenging to maintain by a 
        single copy of the EventEmitter instance throughout the application.

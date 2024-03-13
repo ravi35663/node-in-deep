@@ -1,14 +1,16 @@
 /*
     ==> What is Buffer, Piping & Stream Chaining in Node.js
-
-
 */
 
 /*
 ===> Stream:
+    --> Stream is a sequence of data which is used to represent in small to big files.
     --> To handle and manipulate stream data like a video, a large file, etc., 
         we need stream in node.
     --> The streams module in node.js manage all streams
+    --> In an Express application, the req (request) and res (response) for a request handler 
+        are streams. A req is a readable stream of data whereas res is a writable stream of 
+        data.
 */
 
 /*
@@ -32,7 +34,7 @@
 */
 
 /*
-    ==>Streams and EventEmitters
+    ==> Streams and EventEmitters
     --> Streams extend EventEmitters
     --> Node.js streams extend the EventEmitter class. We can listen to events like 'data' and 
         'end' in streams.
@@ -68,7 +70,7 @@
     -> There are two types of readable streams:
     1) Flowing stream :— 
         A stream that keeps on passing the data that can be directly listened to by using the 
-        data event on the stream.
+        'data' event on the stream.
 
     2) Non-flowing stream :— 
         A stream that does not push data automatically. Instead, the stream stores the data 

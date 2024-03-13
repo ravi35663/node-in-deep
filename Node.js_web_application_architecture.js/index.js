@@ -25,7 +25,7 @@
        event loop.
 
     ==> Event-Loop:
-    -> Event loop is responsible for handing small task like such as executing callbacks or 
+    -> Event loop is responsible for handing small tasks such as executing callbacks or 
        network I/O
     -> these above callbacks are non-blocking and it does not block the main-thread.
     -> if any blocking events/tasks comes to the event loop, event look offload that task and 
