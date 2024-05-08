@@ -8,7 +8,7 @@ const os = require('os')
 -> Node.js has one more important thing preset which is known as Event-Loop which will keep track of 
    all the request/events present in the event queue.
 -> Event-loop will check which kind of request user has send and if the request is a asynchronous
-   /non-blocking request then it sent request to the uses without waiting any other request to complete.
+   /non-blocking request then it sent response to the user without waiting any other request to complete.
 
 -> if the request is blocking request then that request went to the thread-pool which have threads available 
    to perform blocking operations.
@@ -20,7 +20,7 @@ const os = require('os')
 */
 
 /*
-    How Node.js executes requests and CPU intensive tasks
+    How Node.js executes requests and CPU intensive tasks?
     index.js
         -> Node process
            -> MainThread: 
