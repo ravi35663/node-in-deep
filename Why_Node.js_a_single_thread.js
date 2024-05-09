@@ -12,3 +12,24 @@
        the need of creating separate thread to each connection.
     ->  The event loop is the heart of the Node.js processing model.
 */
+
+/*
+   List down the tasks which should be done asynchronously using the event loop?
+   1) I/O Operations: 
+      -> Reading from file/database or network socket
+      -> Writing to file/database or network socket
+
+   2) Network Requests:
+      -> sending HTTP requests, fetching data from API and any other network connection
+
+   3) Timer and Delay:
+      -> Scheduling task to run after certain delay or interval without blocking the main thread 
+   4) Concurrency:
+      -> Perform multiple task execution concurrently, especially in scenarios where one task is 
+         not depends on result of other tasks.
+   5) Callbacks and Promises:
+   6) Event Handling:
+         ............etc
+
+
+*/
