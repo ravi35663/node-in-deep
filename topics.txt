@@ -1,8 +1,6 @@
 ===> https://javascript.plainenglish.io/streams-piping-and-their-error-handling-in-nodejs-c3fd818530b6
 -> completed above first
 
-What are streams in Node.js?
-What is REPL on Node.js?
 Difference between fork and spawn methods?
 What are test pyramids in Node.js
 Explain middlewares in Node.js

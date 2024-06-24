@@ -5,7 +5,7 @@ const os = require('os')
 -> there can we two type of requests 
     1) Blocking request
     2) Non-Blocking request
--> Node.js has one more important thing preset which is known as Event-Loop which will keep track of 
+-> Node.js has one more important thing present which is known as Event-Loop which will keep track of 
    all the request/events present in the event queue.
 -> Event-loop will check which kind of request user has send and if the request is a asynchronous
    /non-blocking request then it sent response to the user without waiting any other request to complete.
