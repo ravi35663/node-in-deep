@@ -1,7 +1,7 @@
 /*
 ==> What is Node.js and where you can use it:
--> Node.js is an open-source, server-side javascript runtime environment built on google chrome V8
-   javascript engine.
+-> Node.js is an open-source, server-side javascript runtime environment built on 
+   google chrome V8 javascript engine.
 -> The V8 chrome javascript engine allows developers to write javascript outside the browser.
 -> Node.js is used to write server side scripts of the applications.
 -> we can build scalable and high performance applications using node.js
