@@ -1,0 +1,1 @@
+console.log("Global <><>: global object is node js ..just like window:",global.queueMicrotask())
