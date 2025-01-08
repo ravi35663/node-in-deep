@@ -1,9 +1,9 @@
 /*
 ==> Streams:
-    ->  Start using data, before it has finshed loading.
-    ->  Netflix, youtube they are use stream data to play video/audio or any large file.
-    ->  Streaming is contiious flow of data from source to destination and it does not wait to load entire data 
-        at once.
+    ->  Start using data, before it has finished loading.
+    ->  Netflix and youtube they are use stream data to play video/audio or any large file.
+    ->  Streaming is continuos flow of data from source to destination and it does not wait to load 
+        entire data at once.
 */
 
 const fs = require('fs');
