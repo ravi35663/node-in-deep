@@ -12,16 +12,16 @@
         "npm init --yes"
         "npm -y"
 
-    -> npm install {package_name} --save ==> 
-    -> npm i -S {package_name}
-    -> npm install {package_name} --save-dev
+    ->  npm install {package_name} --save ==> 
+    ->  npm i -S {package_name}
+    ->  npm install {package_name} --save-dev
     ->  npm i -D {package_name}
 */
 
 
 /*
     ==> Scripts in package.json
-    Scripts that can be executed or triggered before or after another scripts
+        -> Scripts that can be executed or triggered before or after another scripts
 
         {
             "scripts":{
@@ -30,8 +30,7 @@
                 "posttest":"scripts/posttest.js"
             }
         }
-        -> In this case you can execute the script by running either of these commands:
-        ==> 
+        -> In this case you can execute the script by running either of these commands: 
             npm run-script test
             npm run test
             npm test

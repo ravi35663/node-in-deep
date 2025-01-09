@@ -1,15 +1,15 @@
 /*
 ==> Why Choose Node.js :
--> It is single threaded and highly efficient to develop scalable products.
--> Node is able to perform asynchronous work efficiently.
+    -> It is single threaded and highly efficient to develop scalable products.
+    -> Node is able to perform asynchronous work efficiently.
 
 ==> Uses of Node.Js:
-    -> Used to build rest APIs:
-	Node.js allows developers to write real-time applications while providing scope for 
-    mobile application development in JavaScript. The most popular type of applications 
+    => Used to build rest APIs:
+        ->  Node.js allows developers to write real-time applications while providing scope for mobile 
+            application development in JavaScript. The most popular type of applications 
 
     —> API services —
-    expose JSON objects with a REST API for the client to consume.
+        expose JSON objects with a REST API for the client to consume.
 
     -> Used to build streaming web applications:
 	 Node.js has a built-in streams module which allows it to transmit a huge amount of data 
@@ -80,7 +80,7 @@
     Serving static files or content delivery over a network.
 
     => Data Replication:
-    ->Replicating data between distributed systems.
+    -> Replicating data between distributed systems.
 
     => Cloud Storage Operations:
     -> Interacting with cloud storage services to read or write data.
