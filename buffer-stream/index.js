@@ -36,7 +36,7 @@
 /*
 ==> Streams and EventEmitters
     ->  Streams extend EventEmitters
-    ->  Node.js streams extend the EventEmitter class. We can listen to events like 'data' and 
+    ->  Node.js streams extend the EventEmitter class. We can listen to events like 'data', 'open' and 
         'end' in streams.
     ->  To simply listen to an event, we need to use the stream.on() function available in 
         the stream.

@@ -9,15 +9,18 @@ const os = require('os')
    -> Node.js has one more important thing present which is known as Event-Loop which will keep track 
       of all the request/events present in the event queue.
    -> Event-loop will check which kind of request user has send and if the request is a 
-      asynchronous/non-blocking request then event queue process that request and and send response to 
+      asynchronous/non-blocking request then event queue process that request and send response to 
       the user without waiting any other request to complete.
 
    -> If the request is blocking request then that request went to the thread-pool which have threads 
       available to perform blocking operations. 
-      ==> Thread-Pool: It is a collections of threads. Thread is also known as worker
+         ==> Thread-Pool: It is a collections of threads. Thread is also known as worker
+
    -> Once the job of blocking operation is completed by the thread, the thread come back to the 
       thread-pool and it will return the result to the request.
+
    -> whenever you write synchronous code it is always blocking.
+
    -> asynchronous code are non-blocking and even the result of that line of code is not completed it 
       proceed with next line.
 */
@@ -28,9 +31,9 @@ const os = require('os')
         -> Node process
            -> MainThread: 
                 -> init project
-                -> top level code execution
+                -> Top level code execution
                 -> Event callbacks register
-                -> start EventLoop () => Look for 
+                -> Start EventLoop () => Look for 
                     -> 1.Expired timer callbacks
                     -> 2.IO pooling (it is run isolate)
                     -> 3.setImmediate CB
@@ -38,6 +41,7 @@ const os = require('os')
                     * if any task is pending then event loop repeat execution 
                       otherwise it exits the program any promise is found between any 
                       above  process, it can execute anywhere in between the process
+
             -> Thread pool (used for handling CPU intensive task)
                 -> default 4 thread are allocated
                 -> we can increase size of the  threads in node.js with process.env.UV_THREADPOOL_SIZE = any number
@@ -150,6 +154,8 @@ console.log("10: End of script"); // Synchronous
    Microtasks inside I/O: Executes immediately after I/O callback:
       7: nextTick inside I/O
    
+   ==> Timer Phase:
+      6: setTimeout inside I/O ==> because it is running with some delay due to IO callback
    ==> Check-Phase of I/O:
       5: setImmediate inside I/O
    
@@ -226,7 +232,7 @@ Note:
    wait for the next iteration of the timers phase.
 
    -> setImmediate works differently in main phase and in inside the other phases (I/O or Poll phase)
-   -> Always remember how phases are executed inside the node.js.
+   -> ***** "Always remember how phases are executed inside the Node.js."
 */
 
 

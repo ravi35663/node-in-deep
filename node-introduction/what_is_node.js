@@ -2,32 +2,49 @@
 ==> What is Node.js and where you can use it:
    -> Node.js is an open-source, server-side javascript runtime environment built on google chrome V8 
       javascript engine.
+
    -> The V8 chrome javascript engine allows developers to write javascript outside the browser.
+   
    -> Node.js is used to write server side scripts of the applications.
+   
    -> we can build scalable and high performance applications using node.js
-   -> runtime environment includes everything that you need to run/execute a javascript written program 
+   
+   -> Runtime environment includes everything that you need to run/execute a javascript written program 
       at the server side.
+   
    -> both your browser(Chrome) javascript and node.js run on chrome V8 engine. This V8 engine converts 
       your javascript code into faster machine code (low level code) so that your code runs without 
       needing any further interpretation.
+
    -> npm is the largest ecosystem of open source libraries in the world.
+   
    -> Node.js uses an event-driven, non-blocking I/O model that makes it lightweight and efficient.
+   
    -> I/O refers to input/output. It can be anything from reading/writing a local file to making an 
       http request to any server.
+   
    -> I/O takes time and hence blocks other functions. That is the issue node.js is solving with a 
       non-blocking I/O feature.
+
    -> Javascript is single threaded (Not really single threaded but it has a single threaded event-loop)
+   
    -> V8 is an open-source runtime environment which is written in C++.
+   
    -> Javascript --> V8(C++) --> Machine code
+   
    -> There are many javascript runtime like chrome V8, SpiderMonkey by Mozila, Chakra by Microsoft and
       javascript core by apple etc.
-   -> event-driven meaning in node.js is server always ready for actions/events to listen. 
-      I.e when any button is clicked an action with that button will happen at server side in terms of 
+
+   -> Event-driven meaning in node.js is server always ready for 'actions/events' to listen. 
+      i.e when any button is clicked an action with that button will happen at server side in terms of 
       API or something else.
+      
    -> Event-Driven means, node is always ready for the events that are going to occur at server side.
-   -> When we say "event-driven," we mean that the program is designed to respond to specific actions or
+
+   -> When we say "event-driven," which means that the program is designed to respond to specific actions or
       events, just like your birthday party. The events happen on your birthday like cake cutting, gift
       opening kinds of events occur at nodes. That is why node.js is called event driven.
+      
    -> In Node.js, there is a special tool called ""EventEmitter"" that helps with managing these events.
       It's like a party organizer that keeps track of what events can happen and what should be done
       when they happens.

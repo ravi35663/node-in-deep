@@ -50,45 +50,45 @@
         -> Importing or exporting data from one system to another.
     
     => Data Backup/Restore:
-    -> Performing backup and restore operations on a database.
+        -> Performing backup and restore operations on a database.
 
     => Image/Video/audio Processing:
-    -> Reading or writing image and video files, especially high-resolution or large files.
+        -> Reading or writing image and video files, especially high-resolution or large files.
 
     => Compression/Decompression:
-    -> Compressing or decompressing files or data.
+        -> Compressing or decompressing files or data.
 
     => File System Operations:
-    -> Performing various file system operations like copying, moving, or deleting files.
+        -> Performing various file system operations like copying, moving, or deleting files.
 
     => Streaming Data:
-    -> Handling real-time data streaming from external sources.
+        -> Handling real-time data streaming from external sources.
 
     => Database Indexing:
-    -> Creating or updating database indexes, especially for large datasets.
+        -> Creating or updating database indexes, especially for large datasets.
 
     => Search Indexing:
-    -> Building or updating search indexes for search engines.
+        -> Building or updating search indexes for search engines.
 
     => Parsing Large Documents:
-    -> Parsing large documents, such as XML or JSON files.
+        -> Parsing large documents, such as XML or JSON files.
 
     => Remote File Synchronization:
         -> Synchronizing files between local and remote servers.
 
     => Content Delivery:
-    Serving static files or content delivery over a network.
+        -> Serving static files or content delivery over a network.
 
     => Data Replication:
-    -> Replicating data between distributed systems.
+        -> Replicating data between distributed systems.
 
     => Cloud Storage Operations:
-    -> Interacting with cloud storage services to read or write data.
+        -> Interacting with cloud storage services to read or write data.
 
     => Database Transactions:
-    -> Executing transactions that involve multiple database operations.
+        -> Executing transactions that involve multiple database operations.
 
     => Continuous Integration/Deployment:
-    -> Fetching, building, and deploying code in continuous integration or deployment pipelines.
+        -> Fetching, building, and deploying code in continuous integration or deployment pipelines.
   
 */
