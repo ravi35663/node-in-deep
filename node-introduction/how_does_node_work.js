@@ -6,8 +6,10 @@ const os = require('os')
    -> There can we two type of requests 
       1) Blocking request
       2) Non-Blocking request
+
    -> Node.js has one more important thing present which is known as Event-Loop which will keep track 
       of all the request/events present in the event queue.
+
    -> Event-loop will check which kind of request user has send and if the request is a 
       asynchronous/non-blocking request then event queue process that request and send response to 
       the user without waiting any other request to complete.
@@ -140,24 +142,25 @@ console.log("10: End of script"); // Synchronous
       8: nextTick callback
       9: Promise callback
 
-
 ==> Timers Phase: Executes setTimeout callbacks
       2: setTimeout callback
 
 ==> Check Phase: 
-   -> 3: setImmediate callback
+   -> 3: setImmediate callback (because there is I/O operation available)
 
-==> I/O Callbacks Phase:
+==> I/O Callbacks Phase(Poll Phase):
    Executes callbacks for fs.readFile
       4: I/O callback
 
-   Microtasks inside I/O: Executes immediately after I/O callback:
+==> Microtasks inside I/O: Executes immediately after I/O callback:
       7: nextTick inside I/O
    
-   ==> Timer Phase:
-      6: setTimeout inside I/O ==> because it is running with some delay due to IO callback
-   ==> Check-Phase of I/O:
+==> Check-Phase of I/O:
       5: setImmediate inside I/O
+
+==> Timer Phase:
+      6: setTimeout inside I/O ==> because it is running with some delay due to IO callback
+
    
 */
 /*
@@ -167,7 +170,7 @@ console.log("10: End of script"); // Synchronous
    Resolved Promises	                     High	                           Microtasks Queue
    setTimeout()	                        Medium (after Microtasks)	      Timers Phase
    setInterval()	                        Medium (after Microtasks)	      Timers Phase
-   I/O Callbacks (e.g., fs)	            Medium-Low	                     I/O Callbacks Phase
+   I/O Callbacks (e.g., fs)	            Medium-Low	                     I/O Callbacks Phase or Poll Phase
    setImmediate()	                        Medium-Low (after I/O)	         Check Phase
    Close Callbacks	                     Lowest	                        Close Callbacks Phase
 
@@ -231,6 +234,7 @@ Note:
    setImmediate queue is processed immediately after the poll phase, while the setTimeout callback must 
    wait for the next iteration of the timers phase.
 
+   -> Microtasks (run between each phase) → process.nextTick, Promises
    -> setImmediate works differently in main phase and in inside the other phases (I/O or Poll phase)
    -> ***** "Always remember how phases are executed inside the Node.js."
 */

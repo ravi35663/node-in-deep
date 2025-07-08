@@ -42,10 +42,9 @@ console.log("os.hostname(): ",os.hostname()); // e.g., 'my-computer'
 /*
 ===> Use Cases:
     ->  System Monitoring: 
-        Using methods like os.freemem() and os.cpus() for real-time system monitoring.
+            Using methods like os.freemem() and os.cpus() for real-time system monitoring.
     ->  System Compatibility: 
-        Checking the platform or architecture to provide platform-specific code or configurations.
+            Checking the platform or architecture to provide platform-specific code or configurations.
     ->  Application Behavior: 
-        Adjusting application settings based on system resources such as available memory or CPU information.
-
+            Adjusting application settings based on system resources such as available memory or CPU information.
 */

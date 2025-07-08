@@ -46,8 +46,8 @@ console.log(myVar); // "Hello, World!"
 
 /*
 ==> this:
-    ->  In the top-level scope of a node.js module, this does not refer to the global object. 
-        instead, this refers to the current module (exports or module.exports).
+    ->  In the top-level scope of a node.js module, 'this' does not refer to the global object. 
+        instead, 'this' refers to the current module (exports or module.exports).
 */
 
 console.log(this === global); // false

@@ -9,8 +9,8 @@
    
    -> we can build scalable and high performance applications using node.js
    
-   -> Runtime environment includes everything that you need to run/execute a javascript written program 
-      at the server side.
+   -> Runtime environment includes everything that you need to run/execute a javascript program at the 
+      server side.
    
    -> both your browser(Chrome) javascript and node.js run on chrome V8 engine. This V8 engine converts 
       your javascript code into faster machine code (low level code) so that your code runs without 
