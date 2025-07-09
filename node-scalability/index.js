@@ -7,10 +7,10 @@
 
 /*
 Clustering:
-    Clustering involves creating multiple instances of a Node.js process, allowing the 
-    application to take advantage of multiple cores on the server.
-    -> number of cores === number of cpus
-    -> os.cpus().length-> it will gives you number of cpus in your system/server
+    ->  Clustering involves creating multiple instances of a Node.js process, allowing the 
+        application to take advantage of multiple cores on the server.
+        -> number of cores === number of cpus
+        -> os.cpus().length -> it will gives you number of cpus in your system/server
 */
 
 /*
@@ -23,7 +23,7 @@ const http = require('http')
 
 if(cluster.isMaster){
     const workers = os.cpus().length;
-    for(let i=0;i<workers;i++){
+    for(let i=0; i<workers; i++){
         cluster.fork() //it creates child processes AKA worker processes 
     }
     /*

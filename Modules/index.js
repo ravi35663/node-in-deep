@@ -1,17 +1,19 @@
 // What are modules in Node.js?
 /*
-    Modules are used to separate your code into different files so that you can re-use them 
-    withing your application 
-    -> Modules are collection of javascript functions and object that can be used by external 
-    applications/files.
+    ->  Modules are used to separate your code into different files so that you can re-use them 
+        withing your application
+
+    ->  Modules are collection of javascript functions and object that can be used by external 
+        applications/files.
 */
 
 /*
     Types of Node-Modules:
-    1) Core Modules: modules that are pre-installed with node.js. (fs,os,cryptography)
+    1) Core Modules: modules that are pre-installed with node.js. (fs, os, cryptography)
     2) Local Modules: custom modules that are created inside the application. (task.js file)
     3) 3rd party modules: those module which are installed with npm.(express,lodash,moment .etc)
-    Note: Modules can be import with require (in synchronous way) and import (async way).
+    
+==> Note: Modules can be import with require (in synchronous way) and import (async way).
 */
 
 /*
