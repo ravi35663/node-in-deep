@@ -4,9 +4,9 @@
     ==> node-introduction => Done
     ==> js-vs-node => Done
     ==> modules => Done
-    ==> node-scalability => Inprogress
-    ==> node-concurrency 
-    ==> node-architecture
+    ==> node-scalability => Done
+    ==> node-concurrency => Done
+    ==> node-architecture => Inprogress
     ==> package.json 
     ==> repl 
     ==> EventEmitter

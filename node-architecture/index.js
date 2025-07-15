@@ -5,7 +5,7 @@
       2) LIBUV
     
     ==> V8-Engine:
-      -> It is developed by chrome's engineers
+      -> It is developed by google chrome's engineers
       -> V8 engine is the fundamental part of the Node.js
       -> Without V8 engine there is no way to identify javascript in node.js
       -> V8 engine help node.js to identify javascript in node.js and convert that javascript code into 
@@ -26,9 +26,12 @@
 
     ==> Event-Loop:
       -> Event loop is responsible for handing small tasks such as executing callbacks or network I/O.
+
       -> these above callbacks are non-blocking and it does not block the main-thread.
+      
       -> if any blocking events/tasks comes to the event loop, event loop offload that task and send it 
          to the thread pool to execute this task and then event loop continue with small tasks.
+      
       -> Event loop is the heart of the node.js
       -> Some features of event-loop:
         * Event loop is endless loop which will never sleep until the tasks are not executed.
@@ -43,7 +46,8 @@
       -> The event loop offload the heavy task and send it to the thread pool, thread pool pick that 
          task and assign a thread to execute them, once that execution of that heavy/blocking task is 
          done response send back to the event loop by thread pool.
-      -> event loop automatically offload the heavy/blocking tasks
+
+      -> Event loop automatically offload the heavy/blocking tasks
       -> Thread pool is responsible for handling heavy tasks such as:
          * File access
          * Cryptography related things
