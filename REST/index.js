@@ -92,6 +92,7 @@ app.listen(3000, () => {
         domain, you need to enable CORS by setting the appropriate headers.
 */
 
+// 'Access-Control-Allow' -> these are common in each setHeader
 app.use((req, res, next) => {
     res.setHeader('Access-Control-Allow-Origin', '*'); // Acceptable by every origin
     res.setHeader('Access-Control-Allow-Methods', 'GET, POST, PUT, DELETE');

@@ -5,7 +5,7 @@
     -> Print :- Print the result
     -> Loop :- the terminal is ready to take next input 
     
-    -> REPL is used to javascript in the terminal
+    -> REPL is used to run javascript in the terminal
     -> REPL is used for debugging and code execution at terminal
     -> you can create your own REPL in node.js 
     -> terminal can gives you auto completion options

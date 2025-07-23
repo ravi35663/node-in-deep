@@ -5,19 +5,17 @@ const emitter = require('events')
     -> EventEmitter is a class that helps us create a publisher-subscriber pattern in NodeJS.
     -> with the event emitter we can raise any event and we can listen that raised event in 
        different part of the application.
-    -> 
 */
 // Creating event emitter:
 const eventEmitter = new emitter();
 // console.log("eventEmitter:",eventEmitter)
 
-
 /*
     ==> Publishing Events and Listening to Them
-    --> on(eventName,) used to listen published event
-    --> emit(eventName) used to publish event
-    --> you always have to listen event before emitting them otherwise you'll not get the 
-        listener.
+        --> on(eventName) used to listen published event
+        --> emit(eventName) used to publish event
+        --> you always have to listen event before emitting them otherwise you'll not get the 
+            listener.
 
 */
 

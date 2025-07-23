@@ -76,7 +76,7 @@
 
 /*
 ==> How URLs Work in NodeJS?
-    NodeJS provides the url module to work with URLs, making it easy to parse and letruct them.
+    NodeJS provides the url module to work with URLs, making it easy to parse and extract them.
 */
 
 let url = require('url'); // Core library:

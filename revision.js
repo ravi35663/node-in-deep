@@ -1,15 +1,20 @@
 /*
     ==> basic-node.js ==> Done
-    ==> buffer-stream 
     ==> node-introduction => Done
     ==> js-vs-node => Done
     ==> modules => Done
     ==> node-scalability => Done
     ==> node-concurrency => Done
-    ==> node-architecture => Inprogress
-    ==> package.json 
-    ==> repl 
-    ==> EventEmitter
+    ==> node-architecture => Done
+    ==> package.json => Done
+    ==> repl    => Done
+    ==> EventEmitter ==> Done
+    ==> buffer-stream ==> 
+    ==> Microservices
+    ==> Multi-Threading => Done
+    ==> node-with-mongodb   => Done
+    ==> REST    => Done
+    ==> server  => Done
 */
 
 /*
