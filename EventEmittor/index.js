@@ -139,7 +139,7 @@ readStream.on("data",chunk=>{
     console.log("\n");
 })
 
-// once: if some event fires more than one time then once will always that event only once.
+// once: if some event fires more than one time then 'once' will always that event only once.
 const ee2 = new EventEmitter()
 ee2.on("ee2_event",(data)=>{
     console.log("Data in on ee2_event: ",data)
