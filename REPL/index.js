@@ -1,14 +1,14 @@
 /*
 ==> REPL:
-    -> Read : - Read the user input and parse it in javascript data-structure and store in memory
+    -> Read :- Read the user input and parse it in javascript data-structure and store in memory
     -> Eval :- Evaluate the data structure
     -> Print :- Print the result
     -> Loop :- the terminal is ready to take next input 
-
--> REPL is used to javascript in the terminal
--> REPL is used for debugging and code execution at terminal
--> you can create your own REPL in node.js 
--> terminal can gives you auto completion options
+    
+    -> REPL is used to javascript in the terminal
+    -> REPL is used for debugging and code execution at terminal
+    -> you can create your own REPL in node.js 
+    -> terminal can gives you auto completion options
 */
 
 /*

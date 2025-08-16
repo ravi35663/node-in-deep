@@ -9,7 +9,7 @@
 Clustering:
     Clustering involves creating multiple instances of a Node.js process, allowing the 
     application to take advantage of multiple cores on the server.
-    -> number of cors === number of cpus
+    -> number of cores === number of cpus
     -> os.cpus().length-> it will gives you number of cpus in your system/server
 */
 
@@ -24,7 +24,7 @@ const http = require('http')
 if(cluster.isMaster){
     const workers = os.cpus().length;
     for(let i=0;i<workers;i++){
-        cluster.fork()//it creates child processes AKA worker processes 
+        cluster.fork() //it creates child processes AKA worker processes 
     }
     /*
         The primary purpose of using cluster.fork() is to enable a Node.js application to take 
@@ -58,9 +58,9 @@ if(cluster.isMaster){
 /*
     In this example, we use the cluster module to create multiple instances of the Node.js 
     process, each running on a separate core of the server. 
-    The cluster.isMaster condition checks if the current process is the master process, 
+    The "cluster.isMaster" condition checks if the current process is the master process, 
     and if so, forks the required number of worker processes. 
-    The cluster.on event handler listens for worker processes that have died and restart them 
+    The "cluster.on" event handler listens for worker processes that have died and restart them 
     as needed.
 */
 
@@ -76,3 +76,5 @@ Caching:
     Caching involves storing frequently accessed data in memory or on disk, to reduce the 
     amount of time it takes to access the data.
 */
+
+
