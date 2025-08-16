@@ -40,7 +40,8 @@ const os = require('os')
                       above  process, it can execute anywhere in between the process
             -> Thread pool (used for handling CPU intensive task)
                 -> default 4 thread are allocated
-                -> we can increase size of the  threads in node.js with process.env.UV_THREADPOOL_SIZE = any number
+                -> we can increase size of the  threads in node.js with 
+                   process.env.UV_THREADPOOL_SIZE = any number
 
 */ 
 
