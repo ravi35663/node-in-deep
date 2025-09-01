@@ -3,6 +3,7 @@ const os = require('os')
 ==> How does Node.js work?
    -> Whenever we make requests to a server first that request goes into the event queue which is the 
       part of Node.js
+
    -> There can we two type of requests 
       1) Blocking request
       2) Non-Blocking request
@@ -45,8 +46,9 @@ const os = require('os')
                       above  process, it can execute anywhere in between the process
 
             -> Thread pool (used for handling CPU intensive task)
-                -> default 4 thread are allocated
-                -> we can increase size of the  threads in node.js with process.env.UV_THREADPOOL_SIZE = any number
+               -> default 4 thread are allocated
+               -> we can increase size of the  threads in node.js with 
+                  process.env.UV_THREADPOOL_SIZE = any number
 
 */ 
 
@@ -78,16 +80,19 @@ console.log("Last line of the code")
 
 /*
 ==> Code Execution in Node.js
-   -> Node.js uses an event-driven, non-blocking I/O model. The execution happens in two key phases:
-      1) Synchronous Code: Runs directly in the main thread.
-      2) Asynchronous Code: Executes via the 'Event Loop', handling callbacks in specific phases.
+   -> Node.js uses an event-driven, non-blocking I/O model. The execution happens in two key 
+      phases:
+         1) Synchronous Code: Runs directly in the main thread.
+         2) Asynchronous Code: Executes via the 'Event Loop', handling callbacks in specific 
+            phases.
       
 ==> Event Loop Phases:
    1) Timers Phase:
       -> Executes setTimeout and setInterval callbacks whose delay has elapsed.
       
    2) I/O Callbacks Phase:
-      -> Handles callbacks for I/O operations, e.g., reading files or receiving data from a socket.
+      -> Handles callbacks for I/O operations, e.g., reading files or receiving data from a 
+         socket.
       
    3) Idle, Prepare Phase:
       -> Internal system tasks.
@@ -135,7 +140,7 @@ console.log("10: End of script"); // Synchronous
 /*
 ==> Output:
 ==> Synchronous Code (Main Thread): Executes first, line by line:
-      1: Start of script
+      1:  Start of script
       10: End of script
 
 ==> Microtasks (process.nextTick, Promises): Processed before moving to the next Event Loop phase:
@@ -150,7 +155,7 @@ console.log("10: End of script"); // Synchronous
 
 ==> I/O Callbacks Phase(Poll Phase):
    Executes callbacks for fs.readFile
-      4: I/O callback
+      4: I/O callback: Console.log is alway synchronous
 
 ==> Microtasks inside I/O: Executes immediately after I/O callback:
       7: nextTick inside I/O
@@ -160,9 +165,8 @@ console.log("10: End of script"); // Synchronous
 
 ==> Timer Phase:
       6: setTimeout inside I/O ==> because it is running with some delay due to IO callback
-
-   
 */
+
 /*
 ==> Node Event-Loop-Priority-Task-Phase:
    Task                                   Priority	                        Phase
@@ -174,12 +178,11 @@ console.log("10: End of script"); // Synchronous
    setImmediate()	                        Medium-Low (after I/O)	         Check Phase
    Close Callbacks	                     Lowest	                        Close Callbacks Phase
 
-==> Notes: 
+Notes: 
 ==> Microtasks Always Win
    -> Even if setTimeout() or setImmediate() is ready to execute, Node.js will first complete all 
-      pending microtasks (e.g., process.nextTick() and Promises).
+      pending microtasks (e.g., process.nextTick() and Promises) then move to other tasks:
 */
-
 
 /*
 const fs = require("fs");
@@ -238,6 +241,3 @@ Note:
    -> setImmediate works differently in main phase and in inside the other phases (I/O or Poll phase)
    -> ***** "Always remember how phases are executed inside the Node.js."
 */
-
-
-

@@ -1,7 +1,7 @@
 // What are modules in Node.js?
 /*
-    ->  Modules are used to separate your code into different files so that you can re-use them 
-        withing your application
+    ->  Modules are used to separate your code into different files so that you can re-use 
+        them withing your application
 
     ->  Modules are collection of javascript functions and object that can be used by external 
         applications/files.

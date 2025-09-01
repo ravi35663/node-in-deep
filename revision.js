@@ -4,27 +4,26 @@
     ==> js-vs-node => Done
     ==> modules => Done
     ==> node-scalability => Done
-    ==> node-concurrency => Done
-    ==> node-architecture => Done
-    ==> package.json => Done
-    ==> repl    => Done
-    ==> EventEmitter ==> Done
+    ==> node-concurrency => Inprogress
+    ==> node-architecture => 
+    ==> package.json => 
+    ==> repl    => 
+    ==> EventEmitter ==> 
     ==> buffer-stream ==> 
     ==> Microservices
-    ==> Multi-Threading => Done
-    ==> node-with-mongodb   => Done
-    ==> REST    => Done
-    ==> server  => Done
+    ==> Multi-Threading => 
+    ==> node-with-mongodb   => 
+    ==> REST    => 
+    ==> server  => 
 */
 
 /*
 ==> Learn node in deep from here:
     https://dev.to/imsushant12/series/28522
-    ==> part-4 is done:
+    ==> part-4 is :
 */
 
 /*
 ==> Prepare Javascript, Node.js, Mongodb from here:
 https://gist.github.com/paulfranco
-
 */

@@ -1,9 +1,9 @@
 //How does Node.js handle concurrency?
 /*
-    ->  Node.js handles concurrency using an event-driven, non-blocking I/O model. This means that 
-        rather than waiting for I/O operations to complete before moving on to the next task, Node.js 
-        can execute multiple tasks simultaneously by delegating I/O operations to separate threads in 
-        the background.
+    ->  Node.js handles concurrency using an event-driven, non-blocking I/O model. This means 
+        that rather than waiting for I/O operations to complete before moving on to the next 
+        task, Node.js can execute multiple tasks simultaneously by delegating I/O operations 
+        to separate threads in the background.
 
     ->  By using its event loop, worker threads, and asynchronous APIs, Node.js provides a powerful 
         and efficient way to handle concurrency in applications.

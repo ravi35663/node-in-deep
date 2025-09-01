@@ -12,9 +12,9 @@ Clustering:
         -> number of cores === number of cpus
         -> os.cpus().length -> it will gives you number of cpus in your system/server
     ->  Using the cluster module in Node.js has one main goal:
-    ->  To utilize all CPU cores of your machine and scale your Node.js application across them.
+    ->  To utilize all CPU cores of your machine and scale your Node.js application across 
+        them.
 */
-
 /*
     Here’s an example of how to implement clustering in Node.js using the cluster module:
 */
@@ -28,9 +28,11 @@ if(cluster.isMaster){
     for(let i=0; i<workers; i++){
         cluster.fork()
         /*
-            -> It creates child processes AKA worker processes and in each child process node.js uses 1 single thread.
-            -> Each child process has their own memory, thread, event-loop and other stuff and node will use 1 thread in each process.
-            -> Because node.js uses single thread by default
+            ->  It creates child processes AKA worker processes and in each child process 
+                node.js uses 1 single thread.
+            ->  Each child process has their own memory, thread, event-loop and other stuff 
+                and node will use 1 thread in each process.
+            ->  Because node.js uses single thread by default
         */
     }
     /*
@@ -46,7 +48,10 @@ if(cluster.isMaster){
             newly created child process
         */
        cluster.fork(); //// Restart a new worker if one dies
-       //Kill a worker process manually: kill -9 <worker_pid>, then you'll see one process is died and new will be created
+       /*
+        ->  Kill a worker process manually: kill -9 <worker_pid>, then you'll see one process 
+            is died and new will be created
+       */
     })
 }else{
     // Worker process code:
@@ -85,7 +90,7 @@ if(cluster.isMaster){
     ->  Each worker process can handle its own set of requests, which means:
             -> More requests handled concurrently
             -> Fewer slowdowns under heavy load
-    ->  Example: If 1 worker handles 100 requests/sec, 8 workers can handle ~800/sec.
+    ->  Example: If 1 worker handles 100 RPS(Request-Per-Second), 8 workers can handle ~800/sec.
 
 3) Crash Isolation (Fault Tolerance):
     ->  If one worker crashes due to an unhandled exception:
@@ -108,9 +113,9 @@ if(cluster.isMaster){
 ==> Analogy:
     ->  Imagine Node.js is a chef with one hand (single thread).
     ->  By default, you get 1 chef.
-    ->  With cluster.fork(), you hire 10 more chefs (processes) — each with one hand. Now 10 dishes can 
-        be cooked at the same time — not because a chef grew more hands (threads), but because you got 
-        more chefs.
+    ->  With cluster.fork(), you hire 10 more chefs (processes) — each with one hand. 
+        Now 10 dishes can be cooked at the same time — not because a chef grew more hands 
+       (threads), but because you got more chefs.
 */
 
 /*
@@ -133,6 +138,7 @@ Caching:
         — like running shell commands, Python scripts, or even another Node process.
     ->  Think of it as:
         "Node.js calling something outside of itself (OS-level command)"
+
 ==> Use Cases:
     Use Case	                                Example
     Run shell commands	                        ls, mkdir, curl, etc.
@@ -193,7 +199,7 @@ child.on('message',(msg)=>{
 
 /*
     Difference from worker_threads
-    Feature	                    child_process	                    worker_threads
+    Feature	                    child_process	                        worker_threads
     Process/Thread	            New process	                            New thread in same process
     Memory	                    Separate memory	                        Shared memory possible
     Use case	                Run external programs	                Heavy CPU in same app

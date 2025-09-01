@@ -1,20 +1,20 @@
 /*
-    ==> What is Buffer, Piping & Stream Chaining in Node.js
+==> What is Buffer, Piping & Stream Chaining in Node.js
 */
 
 /*
-===> Stream:
-    --> Stream is a sequence of data which is used to represent in small to big files.
-    --> To handle and manipulate stream data like a video, a large file, etc., 
+==> Stream:
+    ->  Stream is a sequence of data which is used to represent in small to big files.
+    ->  To handle and manipulate stream data like a video, a large file, etc., 
         we need stream in node.
-    --> The streams module in node.js manage all streams
-    --> In an Express application, the req (request) and res (response) for a request handler 
+    ->  The streams module in node.js manage all streams
+    ->  In an Express application, the req (request) and res (response) for a request handler 
         are streams. A req is a readable stream of data whereas res is a writable stream of 
         data.
 */
 
 /*
-    ==> Types of streams:
+==> Types of streams:
     1) Readable Stream:
         -> To create a stream of data for reading (say, reading a large file in chunks).
     2) Writable Stream:
@@ -27,10 +27,11 @@
 
 /*
 ==> Buffer in stream:
-    -> Streams work on a concept called buffer.
-    -> Stream hold data in a temporary memory called buffer.Once the part of the buffer data is executed 
-        it is automatically removed from the buffer.
-    -> A buffer is a temporary memory that a stream takes to hold some data until it is consumed.
+    ->  Streams work on a concept called buffer.
+    ->  Stream hold data in a temporary memory called buffer. Once the part of the buffer 
+        data is executed it is automatically removed from the buffer.
+    ->  A buffer is a temporary memory that a stream takes to hold some data until it is 
+        consumed.
 */
 
 /*
