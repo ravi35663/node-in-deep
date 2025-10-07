@@ -9,8 +9,6 @@
         ->  globalThis === this      ==> true
         ->  global === this         ==> true
 */
-
-
 /*
 ==> setTimeout:
     var int = global.setTimeout(() => {

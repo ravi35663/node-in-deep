@@ -67,9 +67,9 @@ const apiRequest3 = () => {
 };
 
 Promise.all([apiRequest1(), apiRequest2(), apiRequest3()])
-    .then(results => {
-        console.log("Result of all promises:", results);
-    })
-    .catch(err => {
-        console.error("Error in one of the promises:", err);
-    });
+.then(results => {
+    console.log("Result of all promises:", results);
+})
+.catch(err => {
+    console.error("Error in one of the promises:", err);
+});
