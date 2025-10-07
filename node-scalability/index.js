@@ -123,14 +123,11 @@ Load Balancing:
     Load balancing involves distributing incoming requests across multiple servers or instances 
     of the application, to ensure that no single server or instance becomes overwhelmed.
 */
-
 /*
 Caching:
     Caching involves storing frequently accessed data in memory or on disk, to reduce the 
     amount of time it takes to access the data.
 */
-
-
 
 /*
 ==> child_process in Node.js:
