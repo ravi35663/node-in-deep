@@ -3,7 +3,8 @@
    -> Node.js is an open-source, server-side javascript runtime environment built on google 
       chrome V8 javascript engine.
 
-   -> The V8 chrome javascript engine allows developers to write javascript outside the browser.
+   -> The V8 chrome javascript engine allows developers to write javascript outside the 
+      browser.
    
    -> Node.js is used to write server side scripts of the applications.
    
@@ -12,7 +13,7 @@
    -> Runtime environment includes everything that you need to run/execute a javascript 
       program at the server side.
    
-   -> both your browser(Chrome) javascript and node.js run on chrome V8 engine. 
+   -> Both your browser(Chrome) javascript and node.js run on chrome V8 engine. 
       This V8 engine converts your javascript code into faster machine code (low level code) 
       so that your code runs without needing any further interpretation.
 

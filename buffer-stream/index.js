@@ -5,14 +5,13 @@
 /*
 ==> Stream:
     ->  Stream is a sequence of data which is used to represent in small to big files.
-    ->  To handle and manipulate stream data like a video, a large file, etc., 
-        we need stream in node.
+    ->  To handle and manipulate stream data like a video, a large file, etc., we need 
+        stream in node.
     ->  The streams module in node.js manage all streams
-    ->  In an Express application, the req (request) and res (response) for a request handler 
-        are streams. A req is a readable stream of data whereas res is a writable stream of 
-        data.
+    ->  In an Express application, the req (request) and res (response) for a request 
+        handler are streams. A req is a readable stream of data whereas res is a writable 
+        stream of data.
 */
-
 /*
 ==> Types of streams:
     1) Readable Stream:
@@ -33,20 +32,18 @@
     ->  A buffer is a temporary memory that a stream takes to hold some data until it is 
         consumed.
 */
-
 /*
 ==> Streams and EventEmitters
     ->  Streams extend EventEmitters
-    ->  Node.js streams extend the EventEmitter class. We can listen to events like 'data', 'open' and 
-        'end' in streams.
-    ->  To simply listen to an event, we need to use the stream.on() function available in 
-        the stream.
+    ->  Node.js streams extend the EventEmitter class. We can listen to events like 'data', 
+        'open' and 'end' in streams.
+    ->  To simply listen to an event, we need to use the stream.on() function available 
+        in the stream.
 */
-
 /*
 ==> Read Streams in Node.js:
-    ->  You can also pause and resume a stream in Node.js by simply calling the pause() and resume() 
-        function on the stream.
+    ->  You can also pause and resume a stream in Node.js by simply calling the pause() 
+        and resume() function on the stream.
 */
 // Example of Flowing data:
 const fs = require("fs")
@@ -70,14 +67,14 @@ readStream.on('end', () => {
 /*
 ==> Flowing and Non-Flowing Streams: there are two types of readable streams:
     1) Flowing stream :— 
-        A stream that keeps on passing the data that can be directly listened to by using the 
-        'data' event on the stream.
+        A stream that keeps on passing the data that can be directly listened to by using 
+        the 'data' event on the stream.
 
     2) Non-flowing stream :— 
-        A stream that does not push data automatically. Instead, the stream stores the data 
-        in the buffer and we need to explicitly call the read() method of the stream to read it.
+        A stream that does not push data automatically. Instead, the stream stores the 
+        data in the buffer and we need to explicitly call the read() method of the stream 
+        to read it.
 */
-
 /*
     This is example of non-flowing data:
     const fs = require("fs")

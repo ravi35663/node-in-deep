@@ -23,7 +23,6 @@ const writeStream = fs.createWriteStream('./dump.txt');
   ->  Running the above two lines creates a file with the named 'dump.txt' but without any data inside it.
 */
 
-
 // * to actually write some data into it, we can use writeStream.write('some data')
 writeStream.write('Hello World,\n');
 writeStream.write('This is Ravi from planet Earth.\n');

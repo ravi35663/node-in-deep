@@ -1,31 +1,31 @@
 const os = require('os')
 /*
 ==> How does Node.js work?
-   -> Whenever we make requests to a server first that request goes into the event queue which is the 
-      part of Node.js
+   -> Whenever we make requests to a server first that request goes into the event queue 
+      which is the part of Node.js
 
    -> There can we two type of requests 
       1) Blocking request
       2) Non-Blocking request
 
-   -> Node.js has one more important thing present which is known as Event-Loop which will keep track 
-      of all the request/events present in the event queue.
+   -> Node.js has one more important thing present which is known as Event-Loop which will 
+      keep track of all the request/events present in the event queue.
 
    -> Event-loop will check which kind of request user has send and if the request is a 
-      asynchronous/non-blocking request then event queue process that request and send response to 
-      the user without waiting any other request to complete.
+      asynchronous/non-blocking request then event queue process that request and send 
+      response to the user without waiting any other request to complete.
 
-   -> If the request is blocking request then that request went to the thread-pool which have threads 
+   -> If the request is blocking, request went to the thread-pool which have threads 
       available to perform blocking operations. 
          ==> Thread-Pool: It is a collections of threads. Thread is also known as worker
 
-   -> Once the job of blocking operation is completed by the thread, the thread come back to the 
-      thread-pool and it will return the result to the request.
+   -> Once the job of blocking operation is completed by the thread, the thread come back 
+      to the thread-pool and it will return the result to the request.
 
    -> whenever you write synchronous code it is always blocking.
 
-   -> asynchronous code are non-blocking and even the result of that line of code is not completed it 
-      proceed with next line.
+   -> asynchronous code are non-blocking and even the result of that line of code is not 
+      completed it proceed with next line.
 */
 
 /*
@@ -80,19 +80,19 @@ console.log("Last line of the code")
 
 /*
 ==> Code Execution in Node.js
-   -> Node.js uses an event-driven, non-blocking I/O model. The execution happens in two key 
-      phases:
+   -> Node.js uses an event-driven, non-blocking I/O model. The execution happens in two 
+      key phases:
          1) Synchronous Code: Runs directly in the main thread.
-         2) Asynchronous Code: Executes via the 'Event Loop', handling callbacks in specific 
-            phases.
+         2) Asynchronous Code: Executes via the 'Event Loop', handling callbacks in 
+            specific phases.
       
 ==> Event Loop Phases:
    1) Timers Phase:
       -> Executes setTimeout and setInterval callbacks whose delay has elapsed.
       
    2) I/O Callbacks Phase:
-      -> Handles callbacks for I/O operations, e.g., reading files or receiving data from a 
-         socket.
+      -> Handles callbacks for I/O operations, e.g., reading files or receiving data from 
+         a socket.
       
    3) Idle, Prepare Phase:
       -> Internal system tasks.
@@ -234,10 +234,11 @@ console.log("12: End of script"); // Synchronous
 /*
 Note:
    The reason setImmediate is executed before setTimeout inside an I/O callback is that the 
-   setImmediate queue is processed immediately after the poll phase, while the setTimeout callback must 
-   wait for the next iteration of the timers phase.
+   setImmediate queue is processed immediately after the poll phase, while the setTimeout 
+   callback must wait for the next iteration of the timers phase.
 
    -> Microtasks (run between each phase) → process.nextTick, Promises
-   -> setImmediate works differently in main phase and in inside the other phases (I/O or Poll phase)
+   -> setImmediate works differently in main phase and in inside the other phases 
+      (I/O or Poll phase)
    -> ***** "Always remember how phases are executed inside the Node.js."
 */

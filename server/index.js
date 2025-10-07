@@ -1,7 +1,7 @@
 /*
 ==> How to Build a Server in NodeJS?
-    ->  The 'http' module is a core module in NodeJS that allows you to create a server that listens for 
-        requests on a specific port and sends responses
+    ->  The 'http' module is a core module in NodeJS that allows you to create a server 
+        that listens for requests on a specific port and sends responses
 */
 
 /*
@@ -24,11 +24,13 @@
     The http module in NodeJS provides functionalities to create HTTP servers and clients.
 
 ==> Important Functions of http modules:
-    -> http.createServer(): Creates an HTTP server that listens to requests and sends responses.
-    -> req.method: Retrieves the request method (GET, POST, etc.).
-    -> req.url: Retrieves the URL of the request.
-    -> res.writeHead(): Sets the status code and headers for the response.
-    -> res.end(): Signals to the server that all of the response headers and body have been sent.
+    ->  http.createServer(): Creates an HTTP server that listens to requests and sends 
+        responses.
+    ->  req.method: Retrieves the request method (GET, POST, etc.).
+    ->  req.url: Retrieves the URL of the request.
+    ->  res.writeHead(): Sets the status code and headers for the response.
+    ->  res.end(): Signals to the server that all of the response headers and body have 
+        been sent.
 */
 
 /*
@@ -76,7 +78,8 @@
 
 /*
 ==> How URLs Work in NodeJS?
-    NodeJS provides the url module to work with URLs, making it easy to parse and extract them.
+    NodeJS provides the url module to work with URLs, making it easy to parse and extract 
+    them.
 */
 
 let url = require('url'); // Core library:

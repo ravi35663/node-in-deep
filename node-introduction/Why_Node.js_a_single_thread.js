@@ -12,8 +12,8 @@
 
    -> Event-loop always run as your sever run and it keep looking for the events to comes.
 
-   -> Because of the event-loop node can handle large number of concurrent connections without 
-      the need of creating separate thread to each connection.
+   -> Because of the event-loop node can handle large number of concurrent connections 
+      without the need of creating separate thread to each connection.
 
    -> The event loop is the heart of the Node.js processing model.
 */

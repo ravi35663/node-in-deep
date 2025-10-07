@@ -1,8 +1,8 @@
 /*
     Node.js is also designed to be highly scalable, meaning it can handle large amounts of 
     traffic and requests without sacrificing performance or reliability. 
-    This is achieved through a combination of techniques, including clustering, load balancing, 
-    and caching.
+    This is achieved through a combination of techniques, including clustering, 
+    load balancing and caching.
 */
 
 /*
@@ -36,8 +36,9 @@ if(cluster.isMaster){
         */
     }
     /*
-        The primary purpose of using cluster.fork() is to enable a Node.js application to take 
-        advantage of multiple CPU cores and distribute the workload across multiple processes.
+        The primary purpose of using cluster.fork() is to enable a Node.js application to 
+        take advantage of multiple CPU cores and distribute the workload across multiple 
+        processes.
     */
 
     // Listen for worker exit events
@@ -64,9 +65,9 @@ if(cluster.isMaster){
 }
 
 /*
-    In the above example, the master process forks/start multiple worker processes, each handling 
-    incoming HTTP requests. If a worker process terminates, the master process automatically 
-    spawns/replace a new worker to replace it.
+    In the above example, the master process forks/start multiple worker processes, each 
+    handling incoming HTTP requests. If a worker process terminates, the master process 
+    automatically spawns/replace a new worker to replace it.
 */
 /*
     In this example, we use the cluster module to create multiple instances of the Node.js 
@@ -81,16 +82,18 @@ if(cluster.isMaster){
 ==> Key Benefits of Using cluster Module:
 1) Utilize Multi-Core CPUs (Performance Boost)
     ->  Node.js runs on a single thread by default. Even if your machine has 8 or 16 cores, 
-        it only uses one. Using the cluster module allows you to create multiple worker processes 
-        (one per CPU core), each running a separate instance of your app.
+        it only uses one. Using the cluster module allows you to create multiple worker 
+        processes (one per CPU core), each running a separate instance of your app.
 
-    ->  Result: Handles more traffic, better parallelism, and uses system resources efficiently.
+    ->  Result: Handles more traffic, better parallelism, and uses system resources 
+        efficiently.
 
 2)  Better Throughput (More Requests per Second):
     ->  Each worker process can handle its own set of requests, which means:
             -> More requests handled concurrently
             -> Fewer slowdowns under heavy load
-    ->  Example: If 1 worker handles 100 RPS(Request-Per-Second), 8 workers can handle ~800/sec.
+    ->  Example: If 1 worker handles 100 RPS(Request-Per-Second), 8 workers can handle 
+        ~800/sec.
 
 3) Crash Isolation (Fault Tolerance):
     ->  If one worker crashes due to an unhandled exception:
@@ -99,8 +102,8 @@ if(cluster.isMaster){
     ->  Keeps your app running without total failure.
 
 4) Scalable Architecture:
-    ->  You can build a production-ready server that distributes load to multiple child processes, 
-        similar to what a reverse proxy (like Nginx) does.
+    ->  You can build a production-ready server that distributes load to multiple child 
+        processes, similar to what a reverse proxy (like Nginx) does.
     ->  Works well in high-traffic web servers, real-time APIs, etc.
 
 5) Zero-Downtime Restarts (with extra setup):
@@ -108,7 +111,6 @@ if(cluster.isMaster){
             -> Restart workers one at a time
             -> Update code without dropping traffic
 */
-
 /*
 ==> Analogy:
     ->  Imagine Node.js is a chef with one hand (single thread).
@@ -120,8 +122,9 @@ if(cluster.isMaster){
 
 /*
 Load Balancing:
-    Load balancing involves distributing incoming requests across multiple servers or instances 
-    of the application, to ensure that no single server or instance becomes overwhelmed.
+    Load balancing involves distributing incoming requests across multiple servers or 
+    instances of the application, to ensure that no single server or instance becomes 
+    overwhelmed.
 */
 /*
 Caching:
@@ -131,8 +134,8 @@ Caching:
 
 /*
 ==> child_process in Node.js:
-    ->  The child_process module lets you spawn new external processes from your Node.js app 
-        — like running shell commands, Python scripts, or even another Node process.
+    ->  The child_process module lets you spawn new external processes from your Node.js 
+        app — like running shell commands, Python scripts, or even another Node process.
     ->  Think of it as:
         "Node.js calling something outside of itself (OS-level command)"
 

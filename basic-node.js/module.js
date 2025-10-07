@@ -8,10 +8,11 @@ console.log("OS is ",os.platform(),os.homedir());
 
 /*
 ==> Node.js OS Modules:
-    ->  The os module in node.js provides a set of utilities for interacting with the operating system 
-        and its resources. It allows node.js applications to access information about the underlying 
-        operating system, which is useful for tasks like determining platform specifics, managing 
-        system resources, or even adjusting application behavior depending on the environment.
+    ->  The os module in node.js provides a set of utilities for interacting with the 
+        operating system and its resources. It allows node.js applications to access 
+        information about the underlying operating system, which is useful for tasks like 
+        determining platform specifics, managing system resources, or even adjusting 
+        application behavior depending on the environment.
 */
 
 //  Returns the architecture of the CPU (e.g., x64, arm, ia32, arm64).
@@ -44,7 +45,9 @@ console.log("os.hostname(): ",os.hostname()); // e.g., 'my-computer'
     ->  System Monitoring: 
             Using methods like os.freemem() and os.cpus() for real-time system monitoring.
     ->  System Compatibility: 
-            Checking the platform or architecture to provide platform-specific code or configurations.
+            Checking the platform or architecture to provide platform-specific code or 
+            configurations.
     ->  Application Behavior: 
-            Adjusting application settings based on system resources such as available memory or CPU information.
+            Adjusting application settings based on system resources such as available 
+            memory or CPU information.
 */

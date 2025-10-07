@@ -2,8 +2,8 @@
 ==> Streams:
     ->  Start using data, before it has finished loading.
     ->  Netflix and youtube they use stream data to play video/audio or any large file.
-    ->  Streaming is continuos flow of data from source to destination and it does not wait to load 
-        entire data at once.
+    ->  Streaming is continuos flow of data from source to destination and it does not 
+        wait to load entire data at once.
 */
 
 const fs = require('fs');
@@ -14,8 +14,9 @@ const writeStream = fs.createWriteStream('./docs/blog4.txt');
 // console.log("Stream stream is",readStream);
 
 /*
-    -> here 'on' is a event lister
-    -> here we're not getting all data at once but we're getting data in pipe with some delay
+    ->  here 'on' is a event lister
+    ->  here we're not getting all data at once but we're getting data in pipe with some 
+        delay
 */
 // readStream.on('data',(chunk)=>{
 //     console.log("---------- New Chunk ----------");
@@ -26,7 +27,7 @@ const writeStream = fs.createWriteStream('./docs/blog4.txt');
 
 /*
 ===> Pipe:
-    -> Send read and write stream data
+    -> Send, read and write stream data
     -> this is alternative of above read and write stream
 */
 
