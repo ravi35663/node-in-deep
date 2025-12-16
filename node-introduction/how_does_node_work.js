@@ -183,7 +183,6 @@ Notes:
    -> Even if setTimeout() or setImmediate() is ready to execute, Node.js will first complete all 
       pending microtasks (e.g., process.nextTick() and Promises) then move to other tasks:
 */
-
 /*
 const fs = require("fs");
 

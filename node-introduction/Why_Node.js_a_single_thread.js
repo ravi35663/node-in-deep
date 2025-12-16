@@ -17,8 +17,6 @@
 
    -> The event loop is the heart of the Node.js processing model.
 */
-
-
 /*
    List down the tasks which can be done asynchronously using the event loop.
    1) I/O Operations: 

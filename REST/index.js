@@ -21,7 +21,6 @@
     ->  REST provides a flexible, scalable way to interact with resources. It allows developers to 
         build APIs that can be consumed by any client that understands HTTP.
 */
-
 /*
 ==> What is Middleware in node?
     ->  Middleware functions in NodeJS are functions that have access to the request object (req), 
@@ -31,11 +30,11 @@
     ->  Middleware can execute any code, make changes to the request and response objects, end the 
         request-response cycle, and call the next middleware function.
 */
-
 /*
 ==> Express Middleware
     ->  Express middleware functions are used to process requests and responses in an Express 
-        application. middleware can be used to add logging, authentication, parsing, and error handling.
+        application. middleware can be used to add logging, authentication, parsing, and 
+        error handling.
 
 ==> Commonly Used Middleware in express:
     1) express.json(): Parses incoming JSON requests and puts the parsed data in req.body.
@@ -60,8 +59,8 @@ HTTP Headers and Status Codes in API Development
         4) Set-Cookie: Used to send cookies from the server to the client.
 
 ==> HTTP Status Codes
-    ->  Status codes are issued by a server in response to a client's request. They indicate the result 
-        of the request.
+    ->  Status codes are issued by a server in response to a client's request. They 
+        indicate the result of the request.
 
 ==> Common Status Codes:
     1) 200 OK: The request was successful.

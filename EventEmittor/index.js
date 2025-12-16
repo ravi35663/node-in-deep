@@ -11,11 +11,11 @@ const eventEmitter = new emitter();
 // console.log("eventEmitter:",eventEmitter)
 
 /*
-    ==> Publishing Events and Listening to Them
-        --> on(eventName) used to listen published event
-        --> emit(eventName) used to publish event
-        --> you always have to listen event before emitting them otherwise you'll not get the 
-            listener.
+==> Publishing Events and Listening to Them
+    --> on(eventName) used to listen published event
+    --> emit(eventName) used to publish event
+    --> you always have to listen event before emitting them otherwise you'll not get the 
+        listener.
 
 */
 

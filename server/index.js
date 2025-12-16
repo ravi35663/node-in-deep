@@ -149,7 +149,7 @@ server.listen(3000, '127.0.0.1', () => {
 
 /*
 ==> Express Introductions:
-    ->  Express is a fast, unopinionated, minimalist web framework for NodeJS. It simplifies the process 
+    ->  Express is a fast, un opinionated, minimalist web framework for NodeJS. It simplifies the process 
         of building web applications and APIs by providing a robust set of features and middleware.
 
 

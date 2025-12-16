@@ -42,7 +42,6 @@ console.log(myVar); // "Hello, World!"
     However, it's generally discouraged to create global variables like this because it 
     can lead to conflicts and unexpected behavior.
 */
-
 /*
 ==> this:
     ->  In the top-level scope of a node.js module, 'this' does not refer to the global 
