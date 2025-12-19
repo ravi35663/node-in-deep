@@ -12,7 +12,6 @@ const readStream = fs.createReadStream('./docs/blog3.txt')
 // const readStream = fs.createReadStream('./docs/blog3.txt',{encoding:'utf8'})
 const writeStream = fs.createWriteStream('./docs/blog4.txt');
 // console.log("Stream stream is",readStream);
-
 /*
     ->  here 'on' is a event lister
     ->  here we're not getting all data at once but we're getting data in pipe with some 

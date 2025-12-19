@@ -4,19 +4,15 @@
     2) Integration Test → test multiple parts together.
     3) E2E Test → test the whole app like a real user.
 */
-
 /*
 ==> Jest what?
     ->  Jest is a testing framework for JavaScript that was developed by Facebook. 
         It is used to test code written in Node.js, React, and other JavaScript frameworks.
     ->  Test files should be named *.test.js or *.spec.js.
 */
-
-
 /*
 ==> Jest Basics (syntax)
 */
-
 describe('Math Utils', () => {
     it('should add numbers', () => {
       const sum = 2 + 3;
