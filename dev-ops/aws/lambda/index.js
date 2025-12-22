@@ -103,3 +103,9 @@ Summary of lambda:
         and automatically manages scaling, availability, and infrastructure, allowing 
         developers to focus only on business logic.
 */
+
+/*
+==> Exercise:
+    ->  Create a lambda function on aws, create a s3 bucket. Call the lambda function 
+        whenever any CRUD operation on files on s3 bucket.
+*/
