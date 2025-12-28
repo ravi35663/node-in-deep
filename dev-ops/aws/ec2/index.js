@@ -152,7 +152,7 @@ How AWS EC2 works (simple flow)
     sudo systemctl enable httpd
 
     # Create a simple HTML file to verify the web server is running
-    echo "<html><h1>Welcome to Apache Web Server on Amazon Linux!</h1></html>">
+    echo "<html><h1>Welcome to Apache Web Server on Amazon Linux!</h1></html>"
     /var/www/html.index.html
 */
 
