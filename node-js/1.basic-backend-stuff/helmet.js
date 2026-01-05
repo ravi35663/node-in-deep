@@ -3,11 +3,15 @@
     ->  Helmet is a security middleware for Node.js / Express.
     ->  It helps secure your application by setting HTTP security headers automatically.
     ->  These headers protect your app from:
-        1) XSS (Cross-Site Scripting)
-        2) Clickjacking
-        3) MIME-type sniffing
-        3) Some CSRF attack vectors
-        4) Information leakage
+        1)  XSS (Cross-Site Scripting): Run attacker JS in victim’s browser
+        2)  Clickjacking: Invisible UI tricks user clicks
+        3)  MIME-type sniffing: Browser misinterprets content type
+        4)  Some CSRF(Cross-Site Request Forgery) attack vectors: 
+            Forcing a logged-in user’s browser to send unauthorized requests without their 
+            consent.
+        5)  Information leakage: 
+            Accidental exposure of sensitive system or user data through errors, headers, 
+            logs, or responses.
 */
 
 /*
@@ -20,7 +24,6 @@
         ->  Reduces attack surface with one line of code
             app.use(helmet());
 */
-
 /*
 ==> What problem does Helmet solve:
     1)  Without Helmet:
@@ -37,7 +40,6 @@
         ->  Adds multiple security headers automatically
         ->  Protects against common browser-level attacks
 */
-
 /*
 ==> How Helmet Works (Internally):
     ->  Helmet is a collection of smaller middleware functions.
@@ -82,7 +84,6 @@
         ->  Referrer-Policy: no-referrer
             ->  Prevents leaking sensitive URLs
 */
-
 /*
 ==> Benefits of Using Helmet:
     1) Improves Application Security
@@ -117,5 +118,5 @@
 ==> When NOT to use Helmet?
     ->  When serving legacy apps that break due to CSP
     ->  When embedding your site in iframes intentionally
-    ->  (but you can configure Helmet)
+        (but you can configure Helmet)
 */

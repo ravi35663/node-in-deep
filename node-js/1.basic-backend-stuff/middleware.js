@@ -25,6 +25,7 @@
         6)  Parse request bodies
         7)  Secure applications
             and many more actions we can perform.
+
     ->  Instead of writing the same logic in every route, we write it once as middleware 
         and use in every routes or add in one top of the routes.
 */
@@ -33,7 +34,6 @@
 ==> Middleware Flow (Request Lifecycle):
     ->  Client → Middleware 1 → Middleware 2 → Route Handler → Response
 */
-
 /*
 ==> Types of Middleware in Node.js (Express):
     1)  Application-level Middleware:
@@ -43,13 +43,13 @@
             next();
         })
 
-    2)  Router-level Middleware:
+    2)  Router-level Middleware: can have multiple routes.
         ->  Applied to a specific router.
             const router  = new Router();
             router.user(authMiddleware)
 
     3)  Built-in Middleware (Express):
-        Middleware	                Purpose
+            Middleware	                Purpose
             express.json()	            Parse JSON request body
             express.urlencoded()	    Parse form data
             express.static()	        Serve static files

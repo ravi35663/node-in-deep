@@ -3,7 +3,8 @@
     ->  A widely recognized awareness document listing the top 10 critical security 
         risks for web applications, compiled by the non-profit 'Open Web Application 
         Security Project' (OWASP).
-    ->  Defined by OWASP — these are the most critical web app security risks developers must know.
+    ->  Defined by OWASP — these are the most critical web app security risks developers 
+        must know.
 */
 /*
 1) Broken Access Control:
@@ -38,7 +39,7 @@
     ->  Code or updates not verified
     ->  Example: Malicious dependency injection
 
-9)Security Logging and Monitoring Failures
+9)  Security Logging and Monitoring Failures
     ->  Attacks not logged or detected
     ->  Example: No alert on repeated failed logins
 
