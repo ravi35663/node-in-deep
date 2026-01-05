@@ -1,7 +1,7 @@
 const os = require('os')
 /*
 ==> How does Node.js work?
-   -> Whenever we make requests to a server first that request goes into the event queue 
+   -> Whenever we make requests to a server, first request goes into the event queue 
       which is the part of Node.js
 
    -> There can we two type of requests 
@@ -47,7 +47,7 @@ const os = require('os')
 
             -> Thread pool (used for handling CPU intensive task)
                -> default 4 thread are allocated
-               -> we can increase size of the  threads in node.js with 
+               -> we can increase size of the threads in node.js with 
                   process.env.UV_THREADPOOL_SIZE = any number
 
 */ 

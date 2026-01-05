@@ -59,7 +59,6 @@ const fs = require('fs')
     File system work cannot be done without node js, because it need server to perform such 
     kind of action.
 */
-
 /*
     Example of Synchronous file reading:
     const fs = require('fs')
@@ -68,7 +67,6 @@ const fs = require('fs')
     console.log(data);
     * Next line of code won't execute until the file is fully read
 */
-
 /*
     Example of asynchronous file reading:
     const fs = require('fs')
