@@ -204,7 +204,6 @@ Advantages:
     Third-party integrations
 */
 
-
 /*
 ==> OpenID Connect (OIDC):
     ->  OIDC is authentication built on top of OAuth 2.0.

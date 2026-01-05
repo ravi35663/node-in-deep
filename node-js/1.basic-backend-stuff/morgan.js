@@ -8,7 +8,6 @@
         4)  Response time
         5)  Content length
 */
-
 /*
 ==> Why do we use Morgan?
     ->  We use Morgan to monitor, debug, and audit HTTP requests in an application.
@@ -40,7 +39,6 @@
         b) Calls next() so request continues
         c) Does NOT modify request/response        
 */
-
 /*
 ==> Common Morgan Log Formats:
     1)  dev (Most common in development):

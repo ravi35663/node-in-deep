@@ -56,15 +56,15 @@ console.log(this === module.exports); // true
     ->  globalThis is a standardized way introduced in ECMAScript 2020 to refer to the 
         global object, whether you're in a browser, Node.js, or another environment. 
         It ensures consistency across different environments.
-    ->  In Node.js, 'globalThis' refers to the same object as global, making it another way to access 
-        the global scope.
+    ->  In Node.js, 'globalThis' refers to the same object as global, making it another 
+        way to access the global scope.
 */
 
 globalThis.myVar = "Hello!";
 console.log(global.myVar); // "Hello!"
 
 /*
-    IP Address:
+==> IP Address:
     ->  These are addresses for the computer that where is the computer exactly placed.
     ->  Location of the computer.
     ->  All computers have their own ip address which is unique.
