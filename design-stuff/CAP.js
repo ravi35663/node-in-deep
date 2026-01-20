@@ -1,80 +1,82 @@
-/*
-==> Statement of CAP theorem:
-    ->  Mainly CAP theorem applied in Distributed system.
-    ->  The CAP theorem states that it is not possible to guarantee all three of the 
-        desirable properties — consistency, availability, and partition tolerance at 
-        the same time in a distributed system with data replication.
-    ->  CAP:
-        C:  Consistency:
-            ->  In a distributed system, consistency means that all nodes or replicas 
-                in the system have the same data at the same time.
+/* ===================== CAP THEOREM (SHORT & POINT-WISE) =====================
 
-        A:  Availability: 
-            ->  In short availability ensures that the system is always available.
-        P:  Partition Tolerance:
-            ->  Network partitions can cause nodes to lose contact with one another, 
-                making communication and synchronization difficult.
+=> What is CAP Theorem?
+- Applies to distributed systems with data replication
+- States that a system cannot guarantee all three at the same time:
+  Consistency (C), Availability (A), Partition Tolerance (P)
+- At most, only two of the three can be achieved simultaneously
 
-    ->  CAP theorem says that we cannot have all three properties i.e. C A P at same 
-        time we can have at most two at once . So let’s understand this .
-*/
 
-/*
-    All possible combinations of consistency , availability and partition tolerance are 
-    1) CA (consistency + availability ):
-    2) AP (availability + partition tolerance ):
-    3) CP (consistency + partition tolerance ):
-*/
-/*
-==> Why is the CAP theorem important:
-    ->  The CAP theorem is important because it highlights trade-offs in distributed 
-        systems. Developers must choose which two of consistency, availability, and 
-        partition tolerance best fit their use case. For example, banking systems 
-        prioritize consistency to avoid incorrect balances, while social media systems 
-        prioritize availability so users can always access the app.
-*/
-/*
-==> Real-World Examples:
-    1)  Amazon DynamoDB: 
-        Designed for high availability and partition tolerance by replicating data 
-        across multiple AZs, but it may sacrifice strong consistency during network 
-        partitions.
+=> CAP Properties:
+C) Consistency
+   - All nodes see the same data at the same time
+   - Every read gets the most recent write
 
-    2)  Google Spanner: 
-        A CP system that provides strong consistency using synchronized clocks and 
-        global distribution, at the cost of possible unavailability during network 
-        partitions.
-*/
+A) Availability
+   - System always responds to requests
+   - No request is left unanswered (success or failure)
 
-/*
-==> Rback, Pback and Aback:
-    ->  Rback, Pback, Aback are commonly used shorthand terms in distributed systems 
-        and CAP theorem discussions to describe how a system behaves when a failure 
-        happens and later recovers.
+P) Partition Tolerance
+   - System continues to work despite network failures
+   - Nodes may lose communication with each other
 
-    1) Rback (Rollback):
-        ->  Means the system reverts to a previous consistent state after a failure.
-        ->  Used when incorrect or partial updates must be undone.
-        ->  Common in strongly consistent systems (e.g., databases with transactions).
-        ->  Example: A failed money transfer is undone so balances remain correct.
+=> Key Rule:
+    - Network partitions are unavoidable
+    - When partition happens, system must choose between C or A
+    - Hence, you can only have two: CA, CP, or AP
 
-    2) Pback (Partition-back / Partial-back)
-        ->  Means the system recovers after a network partition, reconciling data 
-            between nodes.
-        ->  Conflicting updates may need resolution after the partition heals.
-        ->  Common in AP systems.
-        ->  Example: Updates made during a network split are merged later.
+===================== CAP COMBINATIONS =====================
+1) CA (Consistency + Availability)
+   - Works only when no network partition exists
+   - Rare in real distributed systems
 
-    3)  Aback (Availability-back)
-        ->  Means the system restores availability first after downtime or failure.
-        ->  Some data may be stale temporarily, but the service stays up.
-        ->  Prioritizes uptime over immediate consistency.
-        ->  Example: A social app stays online but shows slightly outdated data.
-*/
-    /*
-    | Term  | Meaning                 | Focus              |
-    | ----- | ----------------------- | ------------------ |
-    | Rback | Rollback to safe state  | Consistency        |
-    | Pback | Recover after partition | Partition handling |
-    | Aback | Restore service quickly | Availability       |
+2) CP (Consistency + Partition Tolerance)
+   - Sacrifices availability during partition
+   - System may reject requests to keep data consistent
+   - Example: Google Spanner
+
+3) AP (Availability + Partition Tolerance)
+   - Sacrifices strong consistency
+   - System remains available but may return stale data
+   - Example: Amazon DynamoDB
+
+===================== WHY CAP THEOREM MATTERS ===================== 
+- Forces engineers to make conscious trade-offs
+- Choice depends on business requirements
+- Example:
+   -> Banking systems → Consistency first
+   -> Social media apps → Availability first
+
+
+===================== RBACK, PBACK, ABACK ===================== 
+1) Rback (Rollback)
+   - System reverts to last consistent state
+   - Used when partial or wrong updates occur
+   - Focus: Consistency
+   - Example: Failed bank transaction is undone
+
+2) Pback (Partition-back)
+   - System reconciles data after partition heals
+   - Conflicts resolved later
+   - Focus: Partition handling
+   - Common in AP systems
+
+3) Aback (Availability-back)
+   - System restores service quickly
+   - Data may be temporarily stale
+   - Focus: Availability
+   - Example: Social app stays online with delayed updates
+
+===================== SUMMARY TABLE =====================
+| Term  | Meaning                 | Priority       |
+|------ |------------------------ |--------------- |
+| Rback | Rollback to safe state  | Consistency    |
+| Pback | Recover after partition | Partition      |
+| Aback | Restore service quickly | Availability   |
+
+
+===================== INTERVIEW ONE-LINER =====================
+> CAP theorem says that in a distributed system, you can only guarantee two out of 
+  consistency, availability, and partition tolerance, forcing trade-offs based on 
+  system requirements.
 */

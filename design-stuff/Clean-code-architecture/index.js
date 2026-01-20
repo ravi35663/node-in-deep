@@ -1,48 +1,60 @@
-/*
-==> Clean Code Architecture:
-    ->  Clean Architecture organizes code into layers, where each layer has a single 
-        responsibility.
-    ->  The architecture starts from the innermost core and moves outward as you can 
-        see in picture.
+/* 
+===================== CLEAN ARCHITECTURE (SHORT & POINT-WISE) =====================
+=> What is Clean Architecture?
+    - Organizes code into well-defined layers
+    - Each layer has a single responsibility
+    - Dependencies always point inward
+    - Core business logic is independent of frameworks, UI, and databases
+    - Results in clean, maintainable, and testable code
 
-    ->  Dependencies always point inward: outer layers depend on inner layers, but 
-        inner layers are independent of outer layers.
-    ->  As a result, the core (innermost layer) contains business logic and depends on 
-        nothing, making the system clean, maintainable, and testable.
-*/
 
-/*
-==> Layers of Clean Code architecture:
-    1)  Entity (Domain Layer):
-        ->  The core of the system and the lowest level of abstraction.
-        ->  It contains fundamental business entities like classes and interfaces.
-        ->  This layer depends on nothing and is independent of frameworks, databases, 
-            or external logic.
-        ->  Only the use case layer is allowed to depend on entities.
+=> Dependency Rule (MOST IMPORTANT):
+    - Outer layers can depend on inner layers
+    - Inner layers must NOT depend on outer layers
+    - Business logic remains isolated and stable
 
-    2)  Use Case (Application Layer)
-        ->  This layer contains the main business logic of the application.
-        ->  It takes validated input data, applies business rules, creates or modifies 
-            entities, and coordinates actions.
-        ->  It acts as a bridge between controllers and infrastructure, ensuring 
-            correct business behavior.
+===================== LAYERS OF CLEAN ARCHITECTURE ===================== 
+1) Entity Layer (Domain Layer)
+   - Innermost and most important layer
+   - Contains core business entities (classes, interfaces)
+   - Independent of frameworks, databases, and UI
+   - Knows nothing about other layers
+   - Only Use Case layer can depend on it
 
-    3)  Controller (Interface / Delivery Layer):
-        ->  Handles incoming requests and controls the application flow.
-        ->  It parses, adapts, and validates input data, then forwards valid data to 
-            the use case layer.
-        ->  Invalid requests are rejected here to prevent errors from propagating 
-            further.
+2) Use Case Layer (Application Layer)
+   - Contains application-specific business rules
+   - Coordinates actions between entities
+   - Applies business logic and workflows
+   - Acts as a bridge between controller and infrastructure
+   - Depends only on Entity layer
 
-    4) Infrastructure Layer:
-        ->  Responsible for data persistence and external integrations.
-        ->  It handles database operations and communication with services like email, 
-            payment gateways, or APIs.
-        ->  This layer implements technical details required by the use cases.
+3) Controller Layer (Interface / Delivery Layer)
+   - Handles incoming requests (HTTP, API, UI events)
+   - Validates and adapts input data
+   - Sends valid data to Use Case layer
+   - Prevents invalid data from entering core logic
 
-    5) Outermost Layer (UI / Framework Layer)
-        ->  The outer boundary of the application, such as UI or frameworks.
-        ->  For backend applications, controllers act as the outermost layer; for 
-            frontend apps, the UI is the outermost layer.
-        ->  This layer depends on all inner layers but is not depended on by them.
+4) Infrastructure Layer
+   - Handles technical details
+   - Database access, APIs, email, payment gateways
+   - Implements interfaces defined in inner layers
+   - Depends on Use Case and Entity layers
+
+5) Outermost Layer (UI / Framework Layer)
+   - External-facing layer (UI, Web framework, CLI)
+   - Depends on all inner layers
+   - Inner layers never depend on this layer
+   - Easy to replace without affecting business logic
+
+===================== KEY BENEFITS ===================== 
+- Loose coupling
+- High testability
+- Easy to maintain and extend
+- Framework-independent business logic
+- Clear separation of concerns
+
+===================== INTERVIEW ONE-LINER =====================
+- Clean Architecture structures code into independent layers with inward dependencies, 
+  keeping business logic isolated, testable, and framework-agnostic.
+  
 */
