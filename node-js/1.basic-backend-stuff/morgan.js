@@ -1,5 +1,5 @@
 /*
-==> What is Morgan:
+=> What is Morgan:
     ->  Morgan is a HTTP request logger middleware for Node.js / Express.
     ->  Morgan automatically logs details of every incoming HTTP request such as:
         1)  HTTP method
@@ -9,14 +9,14 @@
         5)  Content length
 */
 /*
-==> Why do we use Morgan?
+=> Why do we use Morgan?
     ->  We use Morgan to monitor, debug, and audit HTTP requests in an application.
     ->  Instead of manually writing 'console.log' for every request, Morgan:
-        1) Logs requests consistently
-        2) Logs them automatically
-        3) Logs them in standard formats
+            1) Logs requests consistently
+            2) Logs them automatically
+            3) Logs them in standard formats
 
-==> What problem does Morgan solve:
+=> What problem does Morgan solve:
     =>  Without Morgan:
         ->  app.get('/users', (req, res) => {
                     console.log(req.method, req.url);
@@ -32,7 +32,7 @@
             ✔ Standard
             ✔ Centralized
 
-==> How Morgan Works (Internally):
+=> How Morgan Works (Internally):
     ->  Morgan sits in the middleware chain:
     ->  Client → Morgan → Routes → Response
         a) Logs request info
@@ -40,20 +40,20 @@
         c) Does NOT modify request/response        
 */
 /*
-==> Common Morgan Log Formats:
+=> Common Morgan Log Formats:
     1)  dev (Most common in development):
-        ->  app.use(morgan('dev))
-        ->  GET /api/users 200 12.345 ms - 1234
-            1)  Color-coded
-            2)  Fast
-            3)  Easy to read
+        -   app.use(morgan('dev))
+        -   Example: GET /api/users 200 12.345 ms - 1234
+                1)  Color-coded
+                2)  Fast
+                3)  Easy to read
     2)  combined (Production standard):
         ->  app.use(morgan('combined'));
-        ->  127.0.0.1 - - [10/Oct/2025:10:00:00 +0000] "GET /api/users HTTP/1.1" 200 1234
-            1) ✔ Apache-style logs
-            2) ✔ Suitable for log files
+        ->  Example: 127.0.0.1 - - [10/Oct/2025:10:00:00 +0000] "GET /api/users HTTP/1.1" 200 1234
+                1) ✔ Apache-style logs
+                2) ✔ Suitable for log files
 
-    3) Other Formats 
+    3) Other Formats:
         | Format   | Use case           |
         | -------- | ------------------ |
         | `tiny`   | Minimal logs       |
@@ -63,9 +63,8 @@
     4)  Custom Morgan Format:
         ->  app.use(morgan(':method :url :status :response-time ms'))
 */
-
 /*
-==> Benefits of Using Morgan:
+=> Benefits of Using Morgan:
     1)  Easy Debugging:
         ->  See which endpoint was called
         ->  Identify failing requests (4xx / 5xx)
@@ -97,11 +96,11 @@
             );
 */
 /*
-==> When NOT to use Morgan?
+=> When NOT to use Morgan?
     ->  If you already use advanced logging tools like:
-        1) Winston
-        2) Pino
-        3) Datadog
+            1) Winston
+            2) Pino
+            3) Datadog
     ->  But even then, Morgan can still be integrated with them.
 */
 /*

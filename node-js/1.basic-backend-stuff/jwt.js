@@ -1,21 +1,20 @@
 /*
-==> What is jsonwebtoken?
-    ->  jsonwebtoken is a Node.js library used to create and verify JWT tokens for 
-        authentication and authorization.
+=> What is jsonwebtoken?
+    ->  jsonwebtoken is a Node.js library used to create and verify JWT tokens 
+        for authentication and authorization.
 
-==> Why do we use it:
+=> Why do we use it:
     ->  To implement stateless authentication
     ->  No server-side session storage
     ->  Easy to scale APIs
 
-==> How JWT Works (Simple Flow):
+=> How JWT Works (Simple Flow):
     ->  Login → 
         Server creates token → 
-        Client stores token → 
-        Client sends token → 
-        Server verifies token
+            Client stores token → 
+                Client sends token → 
+                    Server verifies token
 */
-
 /*
     Create a JWT (Sign)
 */
@@ -52,16 +51,14 @@ Benefits of jwt:
     2) Secure (signed tokens)
     3) Works well with REST APIs
 */
-
 /*
-==> Important Notes
+=> Important Notes
     1) JWT payload is NOT encrypted
     2) Always use expiry
     3) Do not store sensitive data
 */
-
 /*
-==> Important Parts of a JWT Token:
+=> Important Parts of a JWT Token:
     ->  A JWT (JSON Web Token) has 3 parts, separated by dots (.):
         e.g: HEADER.PAYLOAD.SIGNATURE
         1) Header
@@ -83,13 +80,12 @@ Benefits of jwt:
         Token type (JWT)
         ->  Converted to Base64Url
 */
-
 /*
 2) Payload – User data (claims):
     {
-    "userId": 1,
-    "role": "admin",
-    "exp": 1700000000
+        "userId": 1,
+        "role": "admin",
+        "exp": 1700000000
     }
     Contains:
         1) User info (claims)

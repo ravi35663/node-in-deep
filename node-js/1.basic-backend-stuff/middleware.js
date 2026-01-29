@@ -1,11 +1,11 @@
 /*
 ==> Middleware in node:
-    ->  Middleware is a function that sits between the request and the response in a 
-        Node.js (Express) application.
+    ->  Middleware is a function that sits between the request and the response 
+        in a Node.js (Express) application.
     -> It has access to:
-        req (request)
-        res (response)
-        next() (to pass control to the next middleware)
+        - req (request)
+        - res (response)
+        - next() (to pass control to the next middleware)
     ->  Basic Syntax:
         (req,res,next){
             // Do somethings:
@@ -14,7 +14,7 @@
 */
 
 /*
-==> Why do we use Middleware:
+=> Why do we use Middleware:
     ->  Middleware helps us separate concerns and avoid repeating code.
     ->  We use middleware to:
         1)  Modify request or response
@@ -26,16 +26,15 @@
         7)  Secure applications
             and many more actions we can perform.
 
-    ->  Instead of writing the same logic in every route, we write it once as middleware 
-        and use in every routes or add in one top of the routes.
+    ->  Instead of writing the same logic in every route, we write it once as 
+        middleware and use in every routes or add in one top of the routes.
 */
-
 /*
-==> Middleware Flow (Request Lifecycle):
+=> Middleware Flow (Request Lifecycle):
     ->  Client → Middleware 1 → Middleware 2 → Route Handler → Response
 */
 /*
-==> Types of Middleware in Node.js (Express):
+=> Types of Middleware in Node.js (Express):
     1)  Application-level Middleware:
         ->  Applied to all or specific routes.
         app.use((req,res,next)=>{
@@ -53,7 +52,7 @@
             express.json()	            Parse JSON request body
             express.urlencoded()	    Parse form data
             express.static()	        Serve static files
-                and many more.
+                            ...and many more.
 
     4)  Error-handling Middleware:
         ->  Has 4 parameters.
@@ -63,8 +62,8 @@
             })
 */
 /*
-==> Important middleware used in node (commonly):
-    1)  Authentication / Authorization:
+=> Important middleware used in node (commonly):
+    1)  Authentication/Authorization:
         ->  Verify JWT
         ->  Check user roles
             Example:
@@ -83,9 +82,8 @@
     4)  Security:
         ->  Prevent attacks (XSS, CSRF, etc.)
 */
-
 /*
-==> Important Middleware Libraries in Node.js:
+=> Important Middleware Libraries in Node.js:
     | Library                | Use                                           |
     | ---------------------- | --------------------------------------------- |
     | **express**            | Web framework (middleware-based)              |
