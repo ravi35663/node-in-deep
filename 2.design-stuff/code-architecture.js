@@ -1,10 +1,10 @@
 /* ===================== LAYERED (N-TIER) vs MICROSERVICES ARCHITECTURE =====================
 
 ==> Layered (N-Tier) Architecture:
-- Software is structured into distinct layers
-- Each layer has a single responsibility
-- Layers interact only with adjacent layers
-- Keeps system clean, organized, and maintainable
+   - Software is structured into distinct layers
+   - Each layer has a single responsibility
+   - Layers interact only with adjacent layers
+   - Keeps system clean, organized, and maintainable
 
 
 ==> Typical Layers:

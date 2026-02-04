@@ -1,29 +1,29 @@
-/* ===================== CAP THEOREM (SHORT & POINT-WISE) =====================
+/* ==================================== CAP THEOREM ==================================
 
 => What is CAP Theorem?
-- Applies to distributed systems with data replication
-- States that a system cannot guarantee all three at the same time:
-  Consistency (C), Availability (A), Partition Tolerance (P)
-- At most, only two of the three can be achieved simultaneously
+   -  Applies to distributed systems with data replication
+   -  States that a system cannot guarantee all three at the same time:
+   -  Consistency (C), Availability (A), Partition Tolerance (P)
+   -  At most, only two of the three can be achieved simultaneously
 
 
 => CAP Properties:
-C) Consistency
-   - All nodes see the same data at the same time
-   - Every read gets the most recent write
+   C) Consistency
+      - All nodes see the same data at the same time
+      - Every read gets the most recent write
 
-A) Availability
-   - System always responds to requests
-   - No request is left unanswered (success or failure)
+   A) Availability
+      - System always responds to requests
+      - No request is left unanswered (success or failure)
 
-P) Partition Tolerance
-   - System continues to work despite network failures
-   - Nodes may lose communication with each other
+   P) Partition Tolerance
+      - System continues to work despite network failures
+      - Nodes may lose communication with each other
 
 => Key Rule:
-    - Network partitions are unavoidable
-    - When partition happens, system must choose between C or A
-    - Hence, you can only have two: CA, CP, or AP
+   - Network partitions are unavoidable
+   - When partition happens, system must choose between C or A
+   - Hence, you can only have two: CA, CP, or AP
 
 ===================== CAP COMBINATIONS =====================
 1) CA (Consistency + Availability)
@@ -41,11 +41,11 @@ P) Partition Tolerance
    - Example: Amazon DynamoDB
 
 ===================== WHY CAP THEOREM MATTERS ===================== 
-- Forces engineers to make conscious trade-offs
-- Choice depends on business requirements
-- Example:
-   -> Banking systems → Consistency first
-   -> Social media apps → Availability first
+   - Forces engineers to make conscious trade-offs
+   - Choice depends on business requirements
+   - Example:
+      -> Banking systems → Consistency first
+      -> Social media apps → Availability first
 
 
 ===================== RBACK, PBACK, ABACK ===================== 
@@ -76,7 +76,7 @@ P) Partition Tolerance
 
 
 ===================== INTERVIEW ONE-LINER =====================
-> CAP theorem says that in a distributed system, you can only guarantee two out of 
-  consistency, availability, and partition tolerance, forcing trade-offs based on 
-  system requirements.
+   -  CAP theorem says that in a distributed system, you can only guarantee two 
+      out of consistency, availability, and partition tolerance, forcing 
+      trade-offs based on system requirements.
 */

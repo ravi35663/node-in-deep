@@ -1,12 +1,11 @@
 /* 
-===================== CLEAN ARCHITECTURE (SHORT & POINT-WISE) =====================
+=============================== CLEAN ARCHITECTURE ===============================
 => What is Clean Architecture?
     - Organizes code into well-defined layers
     - Each layer has a single responsibility
     - Dependencies always point inward
     - Core business logic is independent of frameworks, UI, and databases
     - Results in clean, maintainable, and testable code
-
 
 => Dependency Rule (MOST IMPORTANT):
     - Outer layers can depend on inner layers
@@ -47,14 +46,14 @@
    - Easy to replace without affecting business logic
 
 ===================== KEY BENEFITS ===================== 
-- Loose coupling
-- High testability
-- Easy to maintain and extend
-- Framework-independent business logic
-- Clear separation of concerns
+   - Loose coupling
+   - High testability
+   - Easy to maintain and extend
+   - Framework-independent business logic
+   - Clear separation of concerns
 
 ===================== INTERVIEW ONE-LINER =====================
-- Clean Architecture structures code into independent layers with inward dependencies, 
-  keeping business logic isolated, testable, and framework-agnostic.
-  
+   -  Clean Architecture structures code into independent layers with inward 
+      dependencies, keeping business logic isolated, testable, and 
+      framework-agnostic.
 */
