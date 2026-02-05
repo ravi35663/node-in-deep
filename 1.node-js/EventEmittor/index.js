@@ -1,17 +1,17 @@
 const emitter = require('events')
-
 /*
 ==> Event Emitters:
-    -> EventEmitter is a class that helps us create a publisher-subscriber pattern in NodeJS.
-    -> with the event emitter we can raise any event and we can listen that raised event in 
-       different part of the application.
+    ->  EventEmitter is a class that helps us create a publisher-subscriber pattern 
+        in NodeJS.
+    ->  with the event emitter we can raise any event and we can listen that raised 
+        event in different part of the application.
 */
 // Creating event emitter:
 const eventEmitter = new emitter();
 // console.log("eventEmitter:",eventEmitter)
 
 /*
-==> Publishing Events and Listening to Them
+=> Publishing Events and Listening to Them
     --> on(eventName) used to listen published event
     --> emit(eventName) used to publish event
     --> you always have to listen event before emitting them otherwise you'll not get the 
@@ -33,40 +33,41 @@ eventEmitter.emit("event1")
 /*
 
 ==> EventEmitter Instance Should Be Singleton for a Single Event Name:
-    --> In other words, the on() and the emit() functions must be called on the same 
+    ->  In other words, the on() and the emit() functions must be called on the same 
         EventEmitter instance
-    --> The listeners won’t work if registered on a separate EventEmitter instance.
+    ->  The listeners won’t work if registered on a separate EventEmitter instance.
         in the above code 'eventEmitter' is an instance of EventEmitter
 
-    --> below code won't do anything because they are on different instances
-    const eventEmitter1 = new EventEmitter();
-    eventEmitter1.on('myEvent', () => {
-        console.log('Listener');
-    });
+    -> below code won't do anything because they are on different instances
+        const eventEmitter1 = new EventEmitter();
+        eventEmitter1.on('myEvent', () => {
+            console.log('Listener');
+        });
 
-    const eventEmitter2 = new EventEmitter();
-    eventEmitter2.emit('myEvent');
+        const eventEmitter2 = new EventEmitter();
+        eventEmitter2.emit('myEvent');
 */
 
 //Maintaining a Single Event-Emitter Instance Application wise
 /*
-    -> A node application is generally 100s of files. This gets challenging to maintain by a 
-       single copy of the EventEmitter instance throughout the application.
+    ->  A node application is generally 100s of files. This gets challenging to 
+        maintain by a single copy of the EventEmitter instance throughout the application.
 
-    -> There is a simple strategy to create and maintain a singleton copy for an EventEmitter 
-       instance.
-    -> you can set any key in your application's object so that you can access it anywhere in 
-       your application
+    ->  There is a simple strategy to create and maintain a singleton copy for an 
+        EventEmitter instance.
+    ->  you can set any key in your application's object so that you can access it 
+        anywhere in your application
     e.g.
-    const eventEmitter = require('events)
-    const express = require('express')
-    const app = express()
+        const eventEmitter = require('events)
+        const express = require('express')
+        const app = express()
 
-    app.set('eventEmitter',new eventEmitter()) // app.set(key,value) :- it will store any key-value in your app's object
+        app.set('eventEmitter',new eventEmitter()) 
+        // app.set(key,value) :- it will store any key-value in your app's object
 
 
-    *access it from any module of the application
-    console.log(app.get('eventEmitter'));
+        *access it from any module of the application
+        console.log(app.get('eventEmitter'));
 */
 
 /*
@@ -88,7 +89,6 @@ eventEmitter.emit("event1")
         Line D
     -> hence the event emitter is synchronous 
 */
-
 /*
     How and Where NodeJS Internally uses Event Emitters
     -> NodeJs internally uses event emitters widely across its environment. 
@@ -99,7 +99,7 @@ eventEmitter.emit("event1")
     -> The following code snippet is a simple example of a stream — explaining the resemblance 
        with event emitters.
 
-    let chunkIndex = 0;
+let chunkIndex = 0;
 const readStream = createReadStream("./data.txt");
 
 readStream.on("open", () => {

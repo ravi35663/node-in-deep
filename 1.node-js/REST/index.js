@@ -1,11 +1,11 @@
 /*
 ==> What is a REST API?
-    ->  REST (Representational State Transfer) is an architectural style for designing networked 
-        applications. It uses a stateless, client-server, cacheable communication protocol — 
-        typically HTTP.
+    ->  REST (Representational State Transfer) is an architectural style for 
+        designing networked applications. It uses a stateless, client-server, 
+        cacheable communication protocol — typically HTTP.
 
-    ->  REST APIs are widely used to allow different software systems to communicate over the web. 
-        They provide a standardized way to interact with web services.
+    ->  REST APIs are widely used to allow different software systems to communicate 
+        over the web. They provide a standardized way to interact with web services.
 
 ==> Types of REST API Requests
         GET: Retrieve data from the server.
@@ -20,30 +20,6 @@
 
     ->  REST provides a flexible, scalable way to interact with resources. It allows developers to 
         build APIs that can be consumed by any client that understands HTTP.
-*/
-/*
-==> What is Middleware in node?
-    ->  Middleware functions in NodeJS are functions that have access to the request object (req), 
-        the response object (res), and the next middleware function in the application's 
-        request-response cycle.
-
-    ->  Middleware can execute any code, make changes to the request and response objects, end the 
-        request-response cycle, and call the next middleware function.
-*/
-/*
-==> Express Middleware
-    ->  Express middleware functions are used to process requests and responses in an Express 
-        application. middleware can be used to add logging, authentication, parsing, and 
-        error handling.
-
-==> Commonly Used Middleware in express:
-    1) express.json(): Parses incoming JSON requests and puts the parsed data in req.body.
-    2) express.urlencoded(): Parses incoming requests with URL-encoded payloads.
-    3) morgan: A logging middleware.
-    4) cors: A middleware for enabling Cross-Origin Resource Sharing.
-    5) helmet: Helps secure Express apps by setting various HTTP headers.
-
-Note: Middleware functions are executed in the order they are defined in the app.
 */
 
 /*

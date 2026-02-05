@@ -5,9 +5,9 @@
 
 ==> Uses of Node.Js:
     => Used to build rest APIs:
-        ->  Node.js allows developers to write real-time applications while providing scope 
-            for mobile application development in JavaScript. The most popular type of 
-            applications 
+        ->  Node.js allows developers to write real-time applications while providing 
+            scope for mobile application development in JavaScript. The most popular 
+            type of applications 
 
     => API services —
         expose JSON objects with a REST API for the client to consume.

@@ -1,9 +1,9 @@
 /*
-==> Authentication (Short & Simple):
-    - Authentication is the process of identifying a user and deciding what they are 
-      allowed to access based on identity, role, or credentials.
+=> Authentication (Short & Simple):
+    -   Authentication is the process of identifying a user and deciding what 
+        they are allowed to access based on identity, role, or credentials.
 
-==> Common Types of Authentication:
+=> Common Types of Authentication:
     - Local (Email/Password)
     - JWT (Token-based)
     - Session-based

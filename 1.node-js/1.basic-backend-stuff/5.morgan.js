@@ -22,9 +22,9 @@
                     console.log(req.method, req.url);
                     res.send("Users");
                 });
-        ->  ❌ Repetitive
-            ❌ Error-prone
-            ❌ Not standardized
+        ->  Repetitive
+            Error-prone
+            Not standardized
 
     =>  With morgan:
         ->  app.use(morgan('dev'))

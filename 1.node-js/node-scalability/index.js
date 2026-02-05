@@ -4,7 +4,6 @@
     This is achieved through a combination of techniques, including clustering, 
     load balancing and caching.
 */
-
 /*
 Clustering:
     ->  Clustering involves creating multiple instances of a Node.js process, allowing the 
@@ -18,6 +17,16 @@ Clustering:
 /*
     Here’s an example of how to implement clustering in Node.js using the cluster module:
 */
+/*
+=> Note: database run outside the node application (other instance):
+=> When created multiple instances of node using cluster.
+    | Resource          | Shared? |
+    | ----------------- | ------- |
+    | Memory            |  No     |
+    | Variables         |  No     |
+    | Cache (in-memory) |  No     |
+    | DB                |  Yes    |
+*/
 
 const cluster = require("cluster")
 const os = require('os')
@@ -28,17 +37,17 @@ if(cluster.isMaster){
     for(let i=0; i<workers; i++){
         cluster.fork()
         /*
-            ->  It creates child processes AKA worker processes and in each child process 
-                node.js uses 1 single thread.
-            ->  Each child process has their own memory, thread, event-loop and other stuff 
-                and node will use 1 thread in each process.
+            ->  It creates child processes AKA worker processes and in each child 
+                process node.js uses 1 single thread.
+            ->  Each child process has their own memory, thread, event-loop and other 
+                stuff and node will use 1 thread in each process.
             ->  Because node.js uses single thread by default
         */
     }
     /*
-        The primary purpose of using cluster.fork() is to enable a Node.js application to 
-        take advantage of multiple CPU cores and distribute the workload across multiple 
-        processes.
+        The primary purpose of using cluster.fork() is to enable a Node.js 
+        application to take advantage of multiple CPU cores and distribute the 
+        workload across multiple processes.
     */
 
     // Listen for worker exit events
@@ -119,7 +128,6 @@ if(cluster.isMaster){
         Now 10 dishes can be cooked at the same time — not because a chef grew more hands 
        (threads), but because you got more chefs.
 */
-
 /*
 Load Balancing:
     Load balancing involves distributing incoming requests across multiple servers or 
@@ -205,8 +213,6 @@ child.on('message',(msg)=>{
     Use case	                Run external programs	                Heavy CPU in same app
     Communication	            Slower, via send()	                    Fast, via postMessage
 */
-
-
 /*
 ==> When to Use child_process
     1)  Running shell commands (e.g., automation,mkdir,ls,..etc)

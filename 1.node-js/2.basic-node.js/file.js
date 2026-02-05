@@ -54,10 +54,9 @@ const fs = require('fs')
         })
     }
 */
-
 /*
-    File system work cannot be done without node js, because it need server to perform such 
-    kind of action.
+    File system work cannot be done without node js, because it need server to 
+    perform such kind of action.
 */
 /*
     Example of Synchronous file reading:

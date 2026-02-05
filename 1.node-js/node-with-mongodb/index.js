@@ -96,5 +96,3 @@ connectDB();
 
     const User = mongoose.model('User', userSchema); // User is model
 */
-
-

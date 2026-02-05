@@ -74,19 +74,21 @@
 ==> Jenkins jobs for remote server:
     ->  Basically with the help of our server we can perform some actions on other 
         server and for do that jenkins helps us to do this job.
+
     ->  You have to install some plugin like Publish Over SSH.
     ->  There are some steps in which you have provide ssh key of one server into the 
         jenkins so that you can use server1 (jenkins's) server to other server.
-    ->  Similarly you can upload multiple files from 1 server to other by making some changes.
+
+    ->  Similarly you can upload multiple files from 1 server to other by making some 
+        changes.
+
     ->  You can upload entire folder and also you can exclude some of them in advance 
         setting of jenkins job. 
 */
-
 /*
 ==> Jenkins job with Ansible:
     -> Install a plugin on jenkins and create a job and configure them.
 */
-
 /*
 ==> You can connect two server using jenkins and transfer files from one to another 
     server and can do more works.

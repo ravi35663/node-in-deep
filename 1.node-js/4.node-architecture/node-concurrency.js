@@ -5,18 +5,19 @@
         on to the next task, Node.js can execute multiple tasks simultaneously by 
         delegating I/O operations to separate threads in the background.
 
-    ->  By using its event loop, worker threads, and asynchronous APIs, Node.js provides a 
-        powerful and efficient way to handle concurrency in applications.
+    ->  By using its event loop, worker threads, and asynchronous APIs, Node.js 
+        provides a powerful and efficient way to handle concurrency in applications.
 */
 
 /*
     For example, let’s say you have a Node.js application that needs to make multiple API 
-    requests to external services. Rather than waiting for each request to complete before 
-    moving on to the next one, Node.js can send each request in parallel and then process 
-    the responses as they arrive.
+    requests to external services. Rather than waiting for each request to complete 
+    before moving on to the next one, Node.js can send each request in parallel and 
+    then process the responses as they arrive.
 */
 /*
-    Here’s an example of how to implement concurrency in Node.js using the 'async' module:
+    Here’s an example of how to implement concurrency in Node.js using the 'async' 
+    module:
 */
 
 const async = require('async') // this can be installed using npm 

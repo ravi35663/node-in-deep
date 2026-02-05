@@ -1,7 +1,4 @@
-/*
-==> What is Buffer, Piping & Stream Chaining in Node.js
-*/
-
+// What is Buffer, Piping & Stream Chaining in Node.js
 /*
 ==> Stream:
     ->  Stream is a sequence of data which is used to represent in small to big files.

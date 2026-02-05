@@ -97,7 +97,7 @@ SELECT * FROM employees WHERE name "%li%"
 -- +----+---------+-----+------------+
 
 /*
-==> SQL ORDER BY ↕️
+==> SQL ORDER BY:
     ->  The `ORDER BY` clause is used to sort the result set in ascending or descending 
         order. 
     ->  By default, the `ORDER BY` sorts in ascending order.

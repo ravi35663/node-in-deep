@@ -3,25 +3,23 @@
     ->  The 'http' module is a core module in NodeJS that allows you to create a server 
         that listens for requests on a specific port and sends responses
 */
-
-/*
-    let http = require('http');
-    let server = http.createServer((req,res)=>{
-        res.statusCode = 200;
-        res.setHeader('Content-Type','text/plain')
-        res.end('Hello, World!\n');
-    })
-    let port = 5000;
-    server.listen(port,'localhost',(err)=>{
-        if(!err){
-            console.log("Server is being listen at port: ",port);
-        }
-    })
-*/
+let http = require('http');
+let server = http.createServer((req,res)=>{
+    res.statusCode = 200;
+    res.setHeader('Content-Type','text/plain')
+    res.end('Hello, World!\n');
+})
+let port = 5000;
+server.listen(port,'localhost',(err)=>{
+    if(!err){
+        console.log("Server is being listen at port: ",port);
+    }
+})
 
 /*
 ==> What is an HTTP Module?
-    The http module in NodeJS provides functionalities to create HTTP servers and clients.
+    The http module in NodeJS provides functionalities to create HTTP servers and 
+    clients.
 
 ==> Important Functions of http modules:
     ->  http.createServer(): Creates an HTTP server that listens to requests and sends 

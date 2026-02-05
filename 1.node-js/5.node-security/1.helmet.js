@@ -49,7 +49,6 @@
         ->  Does NOT change request or response body
         ->  Calls next() to continue the flow
 */
-
 /*
 ==> Important Security Headers Added by Helmet:
     1) X-Content-Type-Options:
@@ -101,9 +100,8 @@
         ->  No need to remember every header
         ->  Helmet handles it for you
 */
-
 /*
-==> Customizing Helmet:
+=> Customizing Helmet:
     ->  Disable or configure specific protections:
     ->  app.use(
             helmet({
