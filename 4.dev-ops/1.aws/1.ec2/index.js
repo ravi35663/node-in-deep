@@ -34,7 +34,6 @@ What is AWS EC2:
     ->  You can restrict if needed
 
 */
-
 /*
 ==> Important points about security groups:
     ->  Region specific

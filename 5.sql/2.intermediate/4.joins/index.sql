@@ -55,4 +55,3 @@ SELECT DATEDIFF('2024–09–12', '2024–09–01') AS days_difference;
 -- | days_difference |
 -- | - - - - - - - - |
 -- |       11        |
-

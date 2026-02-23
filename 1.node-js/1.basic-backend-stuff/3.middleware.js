@@ -8,7 +8,7 @@
         - next() (to pass control to the next middleware)
     ->  Basic Syntax:
         (req,res,next){
-            // Do somethings:
+            // Do some things:
             next() // pass control to next middleware.
         }
 */

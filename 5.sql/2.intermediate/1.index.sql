@@ -1,5 +1,5 @@
 /*
-==> NTERMEDIATE SQL
+==> INTERMEDIATE SQL
 In this tutorial, we will explore:
     - Aggregating data with `SUM`, `AVG`, and `COUNT`
     - Grouping data with `GROUP BY` and filtering grouped data with `HAVING`

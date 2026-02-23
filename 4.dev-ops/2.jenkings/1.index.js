@@ -93,12 +93,10 @@
 ==> You can connect two server using jenkins and transfer files from one to another 
     server and can do more works.
 */
-
 /*
 ==> You can deploy and make changes to a website to other servers using jenkins 
     and ansible.
 */
-
 /*
 ==> User management in jenkins:
     ->  You can create as much user as you can and gives them access to your jenkins 

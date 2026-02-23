@@ -194,7 +194,6 @@ console.log("Active events of instance : ee2:",ee2.eventNames())
           parameter that was used to create a listener.
 
 */
-
 /*
     ==> removeAllListeners()
     This is used to remove all active event listeners from an EventEmitter instance.
@@ -204,6 +203,5 @@ console.log("Active events of instance : ee2:",ee2.eventNames())
 
     eventEmitter.removeAllListeners();
     console.log(eventEmitter.eventNames());
-
 */
 

@@ -44,7 +44,6 @@ const auth = (req, res, next) => {
     ->  Protects routes
     ->  Adds user info to req
 */
-
 /*
 Benefits of jwt:
     1) Stateless & scalable
@@ -95,7 +94,6 @@ Benefits of jwt:
     ⚠️ Not encrypted (only encoded)
     ->  Converted to Base64Url
 */
-
 /*
 3) Signature – Security & integrity:
     ->  The signature is created using:

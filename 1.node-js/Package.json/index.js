@@ -17,11 +17,9 @@
     ->  npm install {package_name} --save-dev
     ->  npm i -D {package_name}
 */
-
-
 /*
-    ==> Scripts in package.json
-        -> Scripts that can be executed or triggered before or after another scripts
+==> Scripts in package.json
+    -> Scripts that can be executed or triggered before or after another scripts
 
         {
             "scripts":{

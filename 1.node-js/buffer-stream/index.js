@@ -20,7 +20,6 @@
         -> We can read and write to a duplex stream (say, a socket connection between a client and a server).
     4) Transform streams:
 */
-
 /*
 ==> Buffer in stream:
     ->  Streams work on a concept called buffer.

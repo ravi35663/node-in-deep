@@ -24,7 +24,6 @@ SELECT AVG(amount) AS avg_sales FROM orders;
 SELECT COUNT(order_id) AS total_orders FROM orders;
 -- total_orders 
 -- 3
-
 /*
 ==> SQL GROUP BY:
     ->  The `GROUP BY` statement is used to group rows that have the same values in 
