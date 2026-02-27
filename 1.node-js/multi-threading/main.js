@@ -23,7 +23,7 @@ What Actually Happens
 */
 
 /*
-==> 🚀 When to Use worker_threads vs cluster?
+==> When to Use worker_threads vs cluster?
 Scenario        	            Use
     Handle HTTP traffic	            cluster
     Heavy computation	            worker_threads

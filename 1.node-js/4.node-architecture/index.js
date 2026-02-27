@@ -27,7 +27,8 @@
          into the event loop.
 
    ==> Event-Loop:
-      -  The Event Loop is responsible for scheduling and executing callbacks of asynchronous operations such as network and file I/O
+      -  The Event Loop is responsible for scheduling and executing callbacks of 
+         asynchronous operations such as network and file I/O.
             | Part       | Job           |
             | ---------- | ------------- |
             | OS/libuv   | Do I/O work   |

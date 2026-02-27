@@ -6,7 +6,6 @@
    -  Consistency (C), Availability (A), Partition Tolerance (P)
    -  At most, only two of the three can be achieved simultaneously
 
-
 => CAP Properties:
    C) Consistency
       - All nodes see the same data at the same time

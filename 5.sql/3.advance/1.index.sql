@@ -105,7 +105,6 @@ SELECT customer_id from orders;
         7. ORDER BY: Sort the result set.
         8. LIMIT: Limit the number of rows returned.
 */
-
 /*
 ==> SQL PIVOTING:
     ->  Pivoting in SQL converts rows into columns, allowing for better data reporting 

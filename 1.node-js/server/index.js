@@ -72,8 +72,6 @@ server.listen(port,'localhost',(err)=>{
 
         URL: https://www.example.com:8080/path/to/resource?id=123&name=John#section1
 */
-
-
 /*
 ==> How URLs Work in NodeJS?
     NodeJS provides the url module to work with URLs, making it easy to parse and extract 

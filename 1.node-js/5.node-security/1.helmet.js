@@ -30,9 +30,9 @@
             res.send('Hello');
         });
 
-        ->  ❌ No X-Frame-Options
-        ->  ❌ No X-Content-Type-Options
-        ->  ❌ No XSS protection headers
+        ->  No X-Frame-Options
+        ->  No X-Content-Type-Options
+        ->  No XSS protection headers
 
     2) With Helmet::
         app.use(helmet());
