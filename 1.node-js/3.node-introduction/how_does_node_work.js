@@ -117,6 +117,7 @@ console.log("Last line of the code")
    4) Poll Phase:
       -> Handles new incoming I/O events and executes their callbacks. 
          Like fs,http, and all.
+         
       -> If no callbacks are pending, it waits for new events.
       -  Poll Phase = Normal successful I/O
       
